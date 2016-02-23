@@ -8,6 +8,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def homepage
+
+  end
+
   def index
     @outputs = Output.all
   end

@@ -6,11 +6,194 @@
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/stylesheets/animate.css">
 
   <style>
-  html, body {height: 100%;}
+  /* navbar */
+  .navbar-default {
+    background-color: rgba(0, 0, 0, .4);
+    border-color: rgba(0, 0, 0, .4);
 
-  .jumbotron {height: 100%;}
+    margin-bottom: 0;
+
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 7%;
+    padding: 0px;
+  }
+
+  html, body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    margin-top: -30px; /* remove navbar space */
+  }
+
+  .delay1sec {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    -ms-animation-delay: .5s;
+    -o-animation-delay: .5s;
+    animation-delay: .5s;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Lato', serif;
+  }
+
+  .lightgray {
+    background-color: rgba(247, 247, 247, 1);
+  }
+
+  .darkgray {
+    color: rgba(150, 150, 150, 1);
+  }
+
+  .blue {
+    color: rgba(33, 125, 187, 1);
+  }
+
+  .green {
+    color: rgba(20, 159, 132, 1);
+  }
+
+  .textshadow {
+    text-shadow: 1px 1px 1px #040000;
+  }
+
+  .narrowmargin {
+    max-width: 490px;
+  }
+
+  .maxwidthicon2 {
+    max-width: 300px;
+  }
+
+  p.big {
+    line-height: 150%;
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    width: 60%;
+  }
+
+  .greenline {
+    color: rgba(20, 159, 132, 1);
+    background-color: rgba(20, 159, 132, 1);
+    border-color: rgba(20, 159, 132, 1);
+  }
+
+  .jumbotron {
+    background-size: cover;
+  }
+
+  .slide1, .slide2, .slide3, .slide4 {
+    min-height: 600px;
+    background-size: cover;
+    background-position: center center;}
+
+  .slide1
+    {background-image: url('/images/festival.jpg');}
+
+  .slide2
+    {background-image: url('/images/cooking.jpg');}
+
+  .slide3
+    {background-image: url('/images/skydive.jpg');}
+
+  .slide4
+    {background-image: url('/images/hotair.jpg');}
+
+  /* Carousel Fade Effect */
+  .carousel.carousel-fade .item {
+      -webkit-transition: opacity .5s linear;
+      -moz-transition: opacity .5s linear;
+      -ms-transition: opacity .5s linear;
+      -o-transition: opacity .5s linear;
+      transition: opacity .5s linear;
+      opacity: .5;
+  }
+  .carousel.carousel-fade .active.item {
+      opacity: 1;
+  }
+  .carousel.carousel-fade .active.left,
+  .carousel.carousel-fade .active.right {
+      left: 0;
+      z-index: 2;
+      opacity: 0;
+      filter: alpha(opacity=0);
+  }
+  .carousel-overlay {
+      position: absolute;
+      bottom: 100px;
+      right: 0;
+      left: 0;
+  }
+
+  .icon1
+    {background-image: url('/images/hotair.jpg');}
+
+  .maxwidth {
+    max-width:100%;
+    max-height:100%;
+  }
+
+
+  ul.icon {
+  list-style-type: none;
+  }
+
+  ul.icon li {
+    text-indent: -1.4em;
+  }
+
+  ul.icon li:before {
+    float: left;
+    width: 1.4em;
+    font-family: 'FontAwesome';
+    margin:0 5px 0 -15px;
+  }
+
+  ul.icon li.check:before {
+    content: "\f00c";
+    color: rgba(20, 159, 132, 1);
+  }
+
+  ul.icon li.checkbox:before {
+    content: "\f096";
+  }
+
+
+
+
+
+
+
+
+
+
+  .vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 20vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;}
+
+  .btn-started {
+    padding: 4px 12px;
+    background-color: #ffffff;
+    color: #27a98c;
+    font-size: 16px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;}
 
   .progress {background: rgba(245, 245, 245, 1); border: 0px solid rgba(245, 245, 245, 1); border-radius: 10px; height: 30px;}
 
@@ -20,7 +203,7 @@
 
   .btn-xlarge {
     padding: 12px 28px;
-    font-size: 20px; //change this to your desired size
+    font-size: 35px; //change this to your desired size
     line-height: normal;
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
@@ -82,6 +265,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 </head>
 <body>
+
+
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -100,12 +285,14 @@
 
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="/users/sign_in">Log In</a></li>
-            <li><a href="/users/sign_up">Sign Up</a></li>
+            <li><a href="/users/sign_in">How it Works</a></li>
+            <li><a href="/users/sign_up">Log In</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
-  </nav>
+</nav>
+
+
 
 
     <% if notice.present? %>
