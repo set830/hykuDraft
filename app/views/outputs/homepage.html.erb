@@ -74,12 +74,12 @@
   <div class="row">
 
     <div id = "howWorksR1C1" class="col-sm-6">
-      <h2 class="blue">
+      <h2 class="blue widthRestraint">
         1. Find cool things to do
       </h2>
     <br />
       <h4 class="darkgray">
-        <p class="big">
+        <p class="big widthRestraint">
           From whole animal dinner roasts to zombie escapes, choose from a wide range of amazing events happening in your area.
         </p>
       </h4>
@@ -154,12 +154,12 @@
   <div class="row">
 
     <div id="howWorksR2C2" class="col-sm-6 col-sm-push-6">
-      <h2 class="blue">
+      <h2 class="blue widthRestraint">
         2. Share your hyku link
       </h2>
     <br />
       <h4 class="darkgray">
-        <p class="big">
+        <p class="big widthRestraint">
           Book a time and specify the minimum number of people needed for the event to happen. We create a unique hyku link for you to share.
           <br />
           <br />
@@ -170,7 +170,7 @@
 
     <div id = "howWorksR2C1" class="col-sm-6 col-sm-pull-6">
       <p>
-        <img src="/images/icon2.png" class="img-responsive wow fadeInLeft animated maxwidthicon2 centeralign" alt="Share Hyku Link">
+        <img src="/images/icon2.png" id="maxwidthicon2" class="img-responsive wow fadeInLeft animated centeralign" alt="Share Hyku Link">
       </p>
     </div>
 
@@ -352,53 +352,146 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-6">
-            <h4>
-              <p id="partnerC1" class="big green widthRestraint">
-              Do you offer a cool group experience?
-              </p>
-            </h4>
-            <h3>
-              <font color="gray">
-                <p id="partnerC1" class="big widthRestraint">
-                Join the growing list of Chicago businesses who use hyku. <br /><br />
+      <div class="col-sm-6">
+        <h4>
+          <p id="partnerC1" class="big green widthRestraint">
+            Do you offer a cool group experience?
+          </p>
+        </h4>
+        <h3>
+          <font color="gray">
+            <p id="partnerC1" class="big widthRestraint">
+              Join the growing list of Chicago businesses who use hyku.
+              <br /><br />
+              Enter your email below, and we'll set you up pronto.
+            </p>
+          </font>
+        </h3>
+      <br />
+        <form id="partnerC1" class="widthRestraint">
+          <div class="form-group col-xs-9">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Work Email">
+          </div>
+          <div class="col-xs-3">
+            <button id="submitemail" type="submit" class="btn btn-success">
+              <i class="fa fa-check"></i> Interested
+            </button>
+          </div>
+        </form>
+      </div>
 
-                Enter your email below, and we'll set you up pronto.
-                </p>
-              </font>
-            </h3>
-            <br />
-            <form id="partnerC1" class="widthRestraint">
-              <div class="form-group col-xs-9">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Work Email">
-              </div>
-              <div class="col-xs-3">
-                <button id="submitemail" type="submit" class="btn btn-success">
-                  <i class="fa fa-check"></i> Interested
-                </button>
-              </div>
-            </form>
+      <div id="partnerImageColumn" class="col-sm-6">
+
+        <div class = "col-xs-6">
+          <img src="/images/artsnspirits.jpg" id="partnerImage" class="img-responsive wow fadeInRight animated top" alt="Active" onmouseover="this.src='/images/artsnspiritsback.jpg'" onmouseout="this.src='/images/artsnspirits.jpg'">
+
+          <img src="/images/architecture.jpg" id="partnerImage" class="img-responsive wow fadeInRight animated" alt="Active" onmouseover="this.src='/images/architectureback.jpg'" onmouseout="this.src='/images/architecture.jpg'">
         </div>
 
-        <div id="partnerImageColumn" class="col-sm-6">
+        <div class = "col-xs-6">
+          <img src="/images/frontier.jpg" id="partnerImage" class="img-responsive wow fadeInRight animated" alt="Active" onmouseover="this.src='/images/frontierback.jpg'" onmouseout="this.src='/images/frontier.jpg'">
 
-          <div class = "col-xs-6">
-            <img src="/images/artsnspirits.jpg" id="partnerImage" class="img-responsive wow fadeInRight animated" alt="Active">
-
-            <img src="/images/architecture.jpg" id="partnerImage" class="img-responsive wow fadeInRight animated" alt="Active">
-          </div>
-
-          <div class = "col-xs-6">
-            <img src="/images/frontier.jpg" id="partnerImage" class="img-responsive wow fadeInRight animated" alt="Active">
-            <img src="/images/worldskydiving.jpg" id="partnerImage" class="img-responsive wow fadeInRight animated" alt="Active">
-          </div>
+          <img src="/images/worldskydiving.jpg" id="partnerImage" class="img-responsive wow fadeInRight animated" alt="Active" onmouseover="this.src='/images/worldskydivingback.jpg'" onmouseout="this.src='/images/worldskydiving.jpg'">
         </div>
+      </div>
 
     </div>
   </div>
 </div>
 
 
+<div class="jumbotron white">
+  <div class="container">
+    <hr>
+    </hr>
+    <div class="row">
+
+      <div class="col-sm-6 centeralign ">
+        <br />
+        <h4 class="darkgray">
+          Join us on <br/>
+        </h4>
+        <h3 class="green">
+          <a class="green" href=""><i class="fa fa-facebook-official"></i></a>
+          <a class="green" href=""><i class="fa fa-twitter-square"></i></a>
+        </h3>
+        <br />
+        <hr>
+        </hr>
+      </div>
+
+      <div class="col-sm-2">
+        <UL id="footer">
+          <h4 class="blue">
+            <li>
+              Company <br/>
+            </li>
+          </h4>
+
+          <h5 class="darkgray">
+            <li> <a class="darkgray" href="">About</a> </li>
+            <li> <a class="darkgray" href="">Press</a> </li>
+            <li> <a class="darkgray" href="">Team</a> </li>
+            <li> <a class="darkgray" href="">Blog</a> </li>
+          </h5>
+        </UL>
+
+        <hr>
+        </hr>
+      </div>
+
+      <div class="col-sm-2">
+        <UL id="footer">
+          <h4 class="blue">
+            <li>
+              Customers <br/>
+            </li>
+          </h4>
+
+          <h5 class="darkgray">
+            <li> <a class="darkgray" href="">How it works</a> </li>
+            <li> <a class="darkgray" href="">Discover Events</a> </li>
+          </h5>
+        </UL>
+
+        <br />
+        <br />
+        <hr>
+        </hr>
+      </div>
+
+      <div class="col-sm-2">
+        <UL id="footer">
+          <h4 class="blue">
+            <li>
+              Partners <br/>
+            </li>
+          </h4>
+
+          <h5 class="darkgray">
+            <li> <a class="darkgray" href="">Why Partner</a> </li>
+            <li> <a class="darkgray" href="">Pricing</a> </li>
+          </h5>
+        </UL>
+
+        <br />
+        <br />
+        <hr>
+        </hr>
+      </div>
+
+    </div>
+
+    <div class="row darkgray centeralign">
+    <br /><br />
+
+        © Hyku, LLC.<br />
+        <a class="darkgray" href="">Privacy Policy </a> | <a class="darkgray" href="">Terms of Use</a>
+
+    </div>
+
+  </div>
+</div>
 
 
 
