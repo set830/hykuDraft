@@ -12,6 +12,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def about
+
+  end
+
   def index
     @outputs = Output.all
   end
