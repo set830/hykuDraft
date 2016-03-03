@@ -16,6 +16,22 @@ class OutputsController < ApplicationController
 
   end
 
+  def pricing
+
+  end
+
+  def discover
+
+  end
+
+  def partner
+
+  end
+
+  def blog
+
+  end
+
   def index
     @outputs = Output.all
   end
