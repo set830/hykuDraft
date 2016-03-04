@@ -27,3 +27,17 @@
 #features{
   max-width: 1050px;
 }
+
+#pricingColumnFree{
+  max-width:450px;
+}
+
+#pricingColumnPay{
+  max-width:450px;
+}
+
+#pricingRow{
+  margin-right: auto;
+  margin-left: auto;
+}
+
