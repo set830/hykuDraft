@@ -32,6 +32,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def press
+
+  end
+
   def index
     @outputs = Output.all
   end

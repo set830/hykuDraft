@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get "/discover", :controller => "outputs", :action => "discover"
   get "/partner", :controller => "outputs", :action => "partner"
   get "/blog", :controller => "outputs", :action => "blog"
+  get "/press", :controller => "outputs", :action => "press"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,6 @@
+#pressCover{
+    background-image: url('/images/partnerCover.jpg');
+    min-height: 7.5%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 7.5vh; /* These two lines are counted as one :-)       */
+
+}
