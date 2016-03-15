@@ -36,6 +36,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def offer
+
+  end
+
   def index
     @outputs = Output.all
   end
