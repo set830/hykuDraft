@@ -33,7 +33,65 @@
 <div class="container">
   <br />
   <br />
-  <div class="col-md-8">
+  <div class="col-md-4 col-md-push-8 centeralign" id="offerForm">
+      <div class="row">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <h5 class="blue">
+                  Min Number
+                </h5>
+                <input type="text" class="form-control centeralign" placeholder="1" aria-describedby="eventDate">
+                <br />
+              </div>
+              <div class="col-sm-6">
+                <h5 class="darkgray">
+                  Max Number
+                </h5>
+                <input type="text" class="form-control centeralign" placeholder="30 people" aria-describedby="eventDate">
+                <br />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <h5 class="blue">
+                  Event Date
+                </h5>
+                <input type="text" class="form-control centeralign" placeholder="mm/dd/yy" aria-describedby="eventDate">
+                <br />
+              </div>
+              <div class="col-sm-6">
+                <h5 class="blue">
+                  Event Time
+                </h5>
+                <input type="text" class="form-control centeralign" placeholder="12:00pm" aria-describedby="eventTime">
+              </div>
+            </div>
+            <div class="row">
+              <br />
+              <p class="big darkgray centeralign" id="offerPadding">
+               When time selected, give 3 closest time options here. If none found, display "No Times Available in System" and change "Activate" button to "Request Time" with * description
+              </p>
+            </div>
+            <div class="row centeralign">
+              <button type="button" class="btn btn-success" id="activateButton">Activate</button>
+              <br />
+              <br />
+              <p class="big darkgray centeralign">
+              *If requested time is accepted by business, you will be e-mailed the hyku link within 24 hours.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+  </div>
+  <div class="col-md-8 col-md-pull-4">
     <div class="row">
       <div class="col-md-2 centeralign">
         <img src="/images/shawn.png" id="offerImage" class="img-responsive" alt="Owner">
@@ -45,7 +103,7 @@
           </small>
         </p>
       </div>
-      <div class="col-md-10">
+      <div class="col-md-10 centeralign" id="marginAuto">
         <h3 class="big">
           Whole Goat Roast
             <span class="blue">
@@ -61,7 +119,6 @@
         <HR id="offerHR">
         </HR>
         <br />
-
       </div>
     </div>
     <div class="row">
@@ -107,9 +164,13 @@
                   8 people
                 </h4>
                 <h6 class="darkgray">
-                  <ul class="big icon">
-                    <li class="check">Whole Goat Roast Dinner</li>
-                  </ul>
+                  <div class="centeralign">
+                    <div class="leftalign">
+                      <ul class="big icon">
+                        <li class="check">Whole Goat Roast Dinner</li>
+                      </ul>
+                    </div>
+                  </div>
                 </h6>
               </div>
               <div class="panel-footer">
@@ -126,9 +187,13 @@
                   9-15 people
                 </h4>
                 <h6 class="darkgray">
-                  <ul class="icon big">
-                    <li class="plus">2 bottles of wine for table</li>
-                  </ul>
+                  <div class="centeralign">
+                    <div class="leftalign">
+                      <ul class="icon big">
+                        <li class="plus">2 bottles of wine for table</li>
+                      </ul>
+                    </div>
+                  </div>
                 </h6>
               </div>
               <div class="panel-footer">
@@ -145,10 +210,14 @@
                   16+ people
                 </h4>
                 <h6 class="darkgray">
-                  <ul class="big icon">
-                    <li class="plus">2 bottles of wine for table</li>
-                    <li class="plus">1 extra dessert dish</li>
-                  </ul>
+                <div class="centeralign">
+                  <div class="leftalign">
+                    <ul class="big icon">
+                      <li class="plus">2 bottles of wine for table</li>
+                      <li class="plus">1 extra dessert dish</li>
+                    </ul>
+                  </div>
+                </div>
                 </h6>
               </div>
               <div class="panel-footer">
@@ -177,6 +246,8 @@
             Chicago, IL 60642
             <br />
             (773) 772-4322
+            <br />
+            <br />
           </h5>
 
         </div>
@@ -219,152 +290,11 @@
     </div>
 
   </div>
-  <div class="col-md-4">
-      <div class="row">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-          </div>
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-sm-6">
-                <h5 class="blue">
-                  Min Number
-                </h5>
-                <input type="text" class="form-control centeralign" placeholder="1" aria-describedby="eventDate">
-                <br />
-                <h5 class="blue">
-                  Event Date
-                </h5>
-                <input type="text" class="form-control centeralign" placeholder="mm/dd/yy" aria-describedby="eventDate">
-              </div>
-              <div class="col-sm-6">
-                <h5 class="darkgray">
-                  Max Number
-                </h5>
-                <input type="text" class="form-control centeralign" placeholder="30 people" aria-describedby="eventDate">
-                <br />
-                <h5 class="blue">
-                  Event Time
-                </h5>
-                <input type="text" class="form-control centeralign" placeholder="12:00pm" aria-describedby="eventTime">
-              </div>
-            </div>
-            <div class="row">
-              <br />
-              <p class="big darkgray centeralign" id="offerPadding">
-               When time selected, give 3 closest time options here. If none found, display "No Times Available in System" and change "Activate" button to "Request Time" with * description
-              </p>
-            </div>
-            <div class="row centeralign">
-              <button type="button" class="btn btn-success" id="activateButton">Activate</button>
-              <br />
-              <br />
-              <p class="big darkgray centeralign">
-              *If requested time is accepted by business, you will be e-mailed the hyku link within 24 hours.
-              </p>
-            </div>
 
-          </div>
-        </div>
-      </div>
-
-  </div>
 </div>
 
 
-<!-- Footer - Separate this code out, so it's not repeating across all files -->
-<div class="jumbotron white">
-  <div class="container">
-    <hr>
-    </hr>
-    <div class="row">
-
-      <div class="col-sm-6 centeralign ">
-        <br />
-        <h4 class="darkgray">
-          Join us on <br/>
-        </h4>
-        <h3 class="green">
-          <a class="green" href=""><i class="fa fa-facebook-official"></i></a>
-          <a class="green" href="https://twitter.com/hykuHQ"><i class="fa fa-twitter-square"></i></a>
-        </h3>
-        <br />
-        <hr>
-        </hr>
-      </div>
-
-      <div class="col-sm-2">
-        <UL id="footer">
-          <h4 class="blue">
-            <li>
-              Company <br/>
-            </li>
-          </h4>
-
-          <h5 class="darkgray">
-            <li> <a class="darkgray" href="">About</a> </li>
-            <li> <a class="darkgray" href="">Press</a> </li>
-            <li> <a class="darkgray" href="">Team</a> </li>
-            <li> <a class="darkgray" href="">Blog</a> </li>
-          </h5>
-        </UL>
-
-        <hr>
-        </hr>
-      </div>
-
-      <div class="col-sm-2">
-        <UL id="footer">
-          <h4 class="blue">
-            <li>
-              Customers <br/>
-            </li>
-          </h4>
-
-          <h5 class="darkgray">
-            <li> <a class="darkgray" href="">How it works</a> </li>
-            <li> <a class="darkgray" href="">Discover Events</a> </li>
-          </h5>
-        </UL>
-
-        <br />
-        <br />
-        <hr>
-        </hr>
-      </div>
-
-      <div class="col-sm-2">
-        <UL id="footer">
-          <h4 class="blue">
-            <li>
-              Partners <br/>
-            </li>
-          </h4>
-
-          <h5 class="darkgray">
-            <li> <a class="darkgray" href="">Why Partner</a> </li>
-            <li> <a class="darkgray" href="">Pricing</a> </li>
-          </h5>
-        </UL>
-
-        <br />
-        <br />
-        <hr>
-        </hr>
-      </div>
-
-    </div>
-
-    <div class="row darkgray centeralign">
-    <br /><br />
-
-        © Hyku, LLC.<br />
-        <a class="darkgray" href="">Privacy Policy </a> | <a class="darkgray" href="">Terms of Use</a>
-
-    </div>
-
-  </div>
-</div>
+<%= render 'footer' %>
 
 
 

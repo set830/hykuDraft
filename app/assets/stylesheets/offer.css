@@ -48,6 +48,7 @@
     padding: 15px;
 }
 
+
 ul.icon li.plus:before {
     content: "\f067";
     color: rgba(20, 159, 132, 1);
@@ -57,4 +58,15 @@ ul.icon li.plus:before {
     width: 300px;
     height: 250px;
     background-color: #CCC;
+}
+
+#offerForm {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
+}
+
+#marginAuto {
+    margin-left: auto;
+    margin-right: auto;
 }
