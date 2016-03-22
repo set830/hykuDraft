@@ -27,6 +27,8 @@ Rails.application.routes.draw do
   get "/blog", :controller => "outputs", :action => "blog"
   get "/press", :controller => "outputs", :action => "press"
   get "/offer", :controller => "outputs", :action => "offer"
+  get "/offer2", :controller => "outputs", :action => "offer2"
+  get "/contact", :controller => "outputs", :action => "contact"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -40,6 +40,14 @@ class OutputsController < ApplicationController
 
   end
 
+  def offer2
+
+  end
+
+  def contact
+
+  end
+
   def index
     @outputs = Output.all
   end

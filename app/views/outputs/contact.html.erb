@@ -1,0 +1,94 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="/stylesheets/contact.css">
+    <script src="js/wow.mis.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+
+<body>
+
+<div class="container-fluid" id="pressCover">
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-10 vcenter">
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron white">
+  <div class="container">
+    <div class="row">
+      <h2 class="darkgray big centeralign">
+          Contact Hyku
+      </h2>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5">
+          <div class="panel panel-default" id="contactPhonePanel">
+            <div class="panel-body centeralign" id="contactImage">
+              <a href="">
+                <h1>
+                  <i class="fa fa-phone blue" id="contactIcon"></i>
+                </h1>
+                <br />
+                <h4 class="darkergray">
+                  Phone Us
+                  <!-- if clicked, then change "Phone Us" to ""-->
+                </h4>
+                <h6 class="darkgray big">
+                  Estimated Response Time:<br/>
+                    5 mins
+                </h6>
+              </a>
+            </div>
+
+            <div class="panel-footer centeralign" id="contactPhoneFooter">
+              <h5 class="darkergray">
+                Leave a voicemail, and we'll call you back pronto.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="panel panel-default" id="contactEmailPanel">
+            <div class="panel-body centeralign" id="contactImage">
+              <a href="">
+                <h1>
+                  <i class="fa fa-envelope-o blue" id="contactIcon"></i>
+                </h1>
+                <br />
+                <h4 class="darkergray">
+                  Email Us
+                </h4>
+                <h6 class="darkgray big">
+                  Estimated Response Time:<br/>
+                   12 hours
+                </h6>
+              </a>
+            </div>
+
+            <div class="panel-footer centeralign" id="contactEmailFooter">
+              <h4>
+                Recommended
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<%= render 'footer' %>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+#contactPhonePanel {
+    max-width: 400px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contactEmailPanel {
+    max-width: 400px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(33, 125, 187, 1);
+}
+
+#contactPhonePanel a:hover {
+  text-decoration: none;
+}
+
+#contactEmailPanel a:hover {
+  text-decoration: none;
+}
+
+#contactImage{
+  min-height: 335px;
+  max-height: 335px;
+  overflow-y: scroll;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#contactImage:hover {
+    outline: 1px solid gray;
+}
+
+#contactPhoneFooter{
+  min-height: 65px;
+  max-height: 65px;
+  overflow-y: scroll;
+  background-color: rgba(247, 247, 247, 1);
+}
+
+#contactEmailFooter{
+  min-height: 65px;
+  max-height: 65px;
+  overflow-y: scroll;
+  background-color: rgba(33, 125, 187, 1);
+  color: white;
+}
+
+#contactIcon {
+    font-size:110px;
+}
