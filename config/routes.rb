@@ -31,6 +31,15 @@ Rails.application.routes.draw do
   get "/contact", :controller => "outputs", :action => "contact"
   get "/email", :controller => "outputs", :action => "email"
 
+  get "/businessRegistered", :controller => "emails", :action => "businessRegistered"
+
+
+
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

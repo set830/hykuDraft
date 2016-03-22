@@ -1,0 +1,60 @@
+.email-background{
+  background: #eeeeee;
+  padding: 10px;
+}
+
+
+.email-container{
+  max-width: 400px;
+  background: white;
+  font-family: sans-serif;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.logoHeader{
+  text-align: center;
+  font-size: 18px;
+  color: rgba(33, 125, 187, 1);
+}
+
+.emailButtonContainer{
+  text-align: center;
+}
+
+.emailButton{
+  text-decoration: none;
+  display: inline-block;
+  background: rgba(33, 125, 187, 1);
+  color: white;
+  padding: 10px 20px 10px;
+  border-radius: 5px;
+}
+
+.nameHeader{
+  color: rgba(112, 112, 114, 1);
+  text-align: left;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.emailBody{
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(150, 150, 150, 1);
+  line-height: 1.5;
+}
+
+.footer-email{
+  background: none;
+  font-size: 12;
+  padding: 20px;
+  text-align: center;
+}
+
+.unsubscribe{
+  color: rgba(112, 112, 114, 1);
+}
