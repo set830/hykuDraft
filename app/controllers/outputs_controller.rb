@@ -48,6 +48,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def email
+
+  end
+
   def index
     @outputs = Output.all
   end
