@@ -8,4 +8,8 @@ class EmailsController < ApplicationController
 
   end
 
+  def hykuCompleteBusiness
+
+  end
+
 end
