@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Business Registered Email</title>
+    <title>Offer Activated to Organizer</title>
     <link rel='stylesheet' href='/stylesheets/emails/businessRegistered.css'>
   </head>
 <body>
@@ -23,29 +23,28 @@
     </hr>
 
     <h2 class="nameHeader">
-      Hi "BusinessName",
+      Hi "OrganizerName",
     </h2>
 
-    <p class="emailBody">Thank you for joining Hyku!</p>
+    <p class="emailBodyCenter">Your hyku offer is officially activated!</p>
 
-    <p class="emailBody">We are excited to be your partner in managing your customers’ group experiences.</p>
+    <p class="emailBodyCenter">
+    <i>
+    "ProductName"
+    <br /> <span class="textColorBlue">@</span> "BusinessName"
+    <br /> <span class="textColorBlue">on</span> "EventDate", "EventTime"
+    </i>
+    </p>
 
     <div class="emailButtonContainer">
-      <a href="http://www.hyku.io/login" class="emailButton">
-        View Your Dashboard
+      <a href="http://www.hyku.io/activate/" class="emailButton">
+        View Offer
       </a>
     </div>
 
-      <ul class="ulEmail">
-        <li>Create a group offer template</li>
-        <li>Monitor pending customer group sales</li>
-        <li>Disburse payments to your bank account</li>
-      </ul>
+    <p class="emailBodyCenter"><b>Share</b> the link and get things rolling.</p>
 
-
-    <p class="emailBody">Please let us know if you have any questions!</p>
-
-    <p class="emailBody">Cheers,<br />The Hyku Team</p>
+    <p class="emailDetailBody">Your GO threshold is “GOminimum”. If you don’t get “GOminimum” friends to join by “ExpirationDate” then the offer will be voided and no charges will be made.</p>
 
   </div>
 

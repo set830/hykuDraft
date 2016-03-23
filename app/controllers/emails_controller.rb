@@ -4,4 +4,8 @@ class EmailsController < ApplicationController
 
   end
 
+  def activateOrganizer
+
+  end
+
 end

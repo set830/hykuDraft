@@ -32,6 +32,7 @@ Rails.application.routes.draw do
   get "/email", :controller => "outputs", :action => "email"
 
   get "/businessRegistered", :controller => "emails", :action => "businessRegistered"
+  get "/activateOrganizer", :controller => "emails", :action => "activateOrganizer"
 
 
 
