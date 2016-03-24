@@ -12,4 +12,8 @@ class EmailsController < ApplicationController
 
   end
 
+  def hykuCompleteToJoiners
+
+  end
+
 end

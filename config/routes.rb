@@ -34,10 +34,7 @@ Rails.application.routes.draw do
   get "/businessRegistered", :controller => "emails", :action => "businessRegistered"
   get "/activateOrganizer", :controller => "emails", :action => "activateOrganizer"
   get "/hykuCompleteBusiness", :controller => "emails", :action => "hykuCompleteBusiness"
-
-
-
-
+  get "/hykuCompleteToJoiners", :controller => "emails", :action => "hykuCompleteToJoiners"
 
 
 
