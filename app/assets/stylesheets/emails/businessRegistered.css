@@ -24,6 +24,7 @@
   color: rgba(33, 125, 187, 1);
 }
 
+
 .emailHR{
   display: block;
   height: 1px;
@@ -41,26 +42,6 @@
   margin: 20px;
   padding: 20px;
   font-size: 20px;
-}
-
-.emailSectionHeader{
-  color: rgba(112, 112, 114, 1);
-  margin-left: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: left;
-}
-
-.emailSectionBody{
-  padding-left: 40px;
-  padding-right: 20px;
-  font-size: 16px;
-  font-weight: 300;
-  color: rgba(112, 112, 114, 1);
-  line-height: 1.5;
-  text-align: left;
 }
 
 .emailDetailBody{
@@ -114,7 +95,31 @@
   font-weight: 300;
   color: rgba(112, 112, 114, 1);
   line-height: 1.5;
+  list-style-type: none;
 }
+
+ul.ulEmail li:before {
+    float: left;
+    text-align: center;
+    width: 1.4em;
+    font-family: 'FontAwesome';
+    margin:0 5px 0 -15px;
+  }
+
+ul.ulEmail li.create:before {
+    content: "\f044";
+    color: rgba(33, 125, 187, 1);
+  }
+
+ul.ulEmail li.monitor:before {
+    content: "\f201";
+    color: rgba(33, 125, 187, 1);
+  }
+
+ul.ulEmail li.dollar:before {
+    content: "\f155";
+    color: rgba(33, 125, 187, 1);
+  }
 
 .footer-email{
   background: none;
@@ -130,6 +135,33 @@
   color: rgba(150, 150, 150, 1);
   line-height: 1.5;
 }
+
+table {
+    border-bottom: 1px solid #ddd;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.emailTableTitle {
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(112, 112, 114, 1);
+}
+
+.emailTableDetails{
+    text-align: right;
+    padding: 10px;
+    font-size: 16px;
+    color: rgba(112, 112, 114, 1);
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2
+}
+
 
 .unsubscribe{
   color: rgba(112, 112, 114, 1);
