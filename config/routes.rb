@@ -40,6 +40,7 @@ Rails.application.routes.draw do
   get "/activatedToPartner", :controller => "emails", :action => "activatedToPartner"
   get "/requestToPartner", :controller => "emails", :action => "requestToPartner"
   get "/goToJoiner", :controller => "emails", :action => "goToJoiner"
+  get "/joinedBeforeGo", :controller => "emails", :action => "joinedBeforeGo"
 
 
 

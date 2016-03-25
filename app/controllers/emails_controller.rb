@@ -36,4 +36,8 @@ class EmailsController < ApplicationController
 
   end
 
+  def joinedBeforeGo
+
+  end
+
 end
