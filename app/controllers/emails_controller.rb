@@ -20,4 +20,8 @@ class EmailsController < ApplicationController
 
   end
 
+  def capReachedToOrganizer
+
+  end
+
 end
