@@ -32,4 +32,8 @@ class EmailsController < ApplicationController
 
   end
 
+  def goToJoiner
+
+  end
+
 end

@@ -39,6 +39,7 @@ Rails.application.routes.draw do
   get "/capReachedToOrganizer", :controller => "emails", :action => "capReachedToOrganizer"
   get "/activatedToPartner", :controller => "emails", :action => "activatedToPartner"
   get "/requestToPartner", :controller => "emails", :action => "requestToPartner"
+  get "/goToJoiner", :controller => "emails", :action => "goToJoiner"
 
 
 
