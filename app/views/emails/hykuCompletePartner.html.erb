@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hyku Complete to Joiners</title>
+    <title>Hyku Complete to Partner</title>
     <link rel='stylesheet' href='/stylesheets/emails/partnerRegistered.css'>
   </head>
 <body>
@@ -22,52 +22,17 @@
     <hr class="emailHR">
     </hr>
 
-    <table class="emailTable">
-      <tr>
-        <td class="emailTableTitle">Redemption Code</td>
-        <td class="emailTableDetails">"RedemptionCode"</td>
-      </tr>
-    </table>
-
     <h2 class="nameHeader">
-      Hi "JoinerName",
+      Hi "PartnerName",
     </h2>
 
-    <p class="emailBodyCenter">Your hyku for "OrganizerName"'s "ProductName" at "PartnerName" has been successfully purchased!</p>
+    <p class="emailBody">A group of prepaid customers is headed your way!</p>
 
     <div class="emailButtonContainer">
       <a href="http://www.hyku.io/activate/" class="emailButton">
-        View Hyku
+        Manage Hyku
       </a>
     </div>
-
-    <br />
-
-    <h3 class="logoHeader">
-      Order Details
-    </h3>
-
-    <hr class="emailHR">
-    </hr>
-
-    <table class="emailTable">
-      <tr>
-        <td class="emailTableTitle">Description</td>
-        <td class="emailTableDetails">"ProductName"</td>
-      </tr>
-      <tr>
-        <td class="emailTableTitle">Price</td>
-        <td class="emailTableDetails">"CurrentPrice"</td>
-      </tr>
-      <tr>
-        <td class="emailTableTitle">Quantity</td>
-        <td class="emailTableDetails">"JoinerQuantity"</td>
-      </tr>
-      <tr>
-        <td class="emailTableTitle">Total Payment</td>
-        <td class="emailTableDetails">"AmountChargedToJoiner"</td>
-      </tr>
-    </table>
 
     <br />
 
@@ -88,6 +53,10 @@
         <td class="emailTableTitle">Email</td>
         <td class="emailTableDetails">"OrganizerEmail"</td>
       </tr>
+      <tr>
+        <td class="emailTableTitle">Phone</td>
+        <td class="emailTableDetails">"OrganizerPhone"</td>
+      </tr>
     </table>
 
     <br />
@@ -103,14 +72,6 @@
       <tr>
         <td class="emailTableTitle">Purchased</td>
         <td class="emailTableDetails">"ProductName"</td>
-      </tr>
-      <tr>
-        <td class="emailTableTitle">Location</td>
-        <td class="emailTableDetails">"PartnerName"</td>
-      </tr>
-      <tr>
-        <td class="emailTableTitle">Address</td>
-        <td class="emailTableDetails">"PartnerAddress"</td>
       </tr>
       <tr>
         <td class="emailTableTitle">Event Date</td>
@@ -129,18 +90,32 @@
     <br />
 
     <h3 class="logoHeader">
-      What Now?
+      Payment
     </h3>
 
     <hr class="emailHR">
     </hr>
 
-    <OL class="olEmail">
-        <li> "OrganizerName" or "PartnerName" will contact you if there's any special instructions you need to complete beforehand</li>
-        <li> If not, know your redemption code (top of this email), show up to the event, and enjoy!</li>
-    </OL>
+    <table class="emailTable">
+      <tr>
+        <td class="emailTableTitle">Received</td>
+        <td class="emailTableDetails">"PaymentDate"</td>
+      </tr>
+      <tr>
+        <td class="emailTableTitle">Total Amount</td>
+        <td class="emailTableDetails">"TotalGroupPrice"</td>
+      </tr>
+      <tr>
+        <td class="emailTableTitle">Hyku Fee</td>
+        <td class="emailTableDetails">-"HykuFee"</td>
+      </tr>
+      <tr>
+        <td class="emailTableTitle">Payment</td>
+        <td class="emailTableDetails">$"HykuPaymentToPartner"</td>
+      </tr>
+    </table>
 
-    <p class="emailDetailBody">If you got this email in error, please shoot us an email at happycustomers@hyku.io and we'll quickly get it squared away.</p>
+    <p class="emailDetailBody">Payment will be deposited into your account in 2-3 business days. Login to your hyku dashboard to process any refunds.</p>
 
   </div>
 

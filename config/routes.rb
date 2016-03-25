@@ -31,10 +31,11 @@ Rails.application.routes.draw do
   get "/contact", :controller => "outputs", :action => "contact"
   get "/email", :controller => "outputs", :action => "email"
 
-  get "/businessRegistered", :controller => "emails", :action => "businessRegistered"
+  get "/partnerRegistered", :controller => "emails", :action => "partnerRegistered"
   get "/activateOrganizer", :controller => "emails", :action => "activateOrganizer"
-  get "/hykuCompleteBusiness", :controller => "emails", :action => "hykuCompleteBusiness"
+  get "/hykuCompleteBusiness", :controller => "emails", :action => "hykuCompletePartner"
   get "/hykuCompleteToJoiners", :controller => "emails", :action => "hykuCompleteToJoiners"
+  get "/goToPartner", :controller => "emails", :action => "goToPartner"
 
 
 

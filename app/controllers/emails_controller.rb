@@ -1,6 +1,6 @@
 class EmailsController < ApplicationController
 
-  def businessRegistered
+  def partnerRegistered
 
   end
 
@@ -8,11 +8,15 @@ class EmailsController < ApplicationController
 
   end
 
-  def hykuCompleteBusiness
+  def hykuCompletePartner
 
   end
 
   def hykuCompleteToJoiners
+
+  end
+
+  def goToPartner
 
   end
 
