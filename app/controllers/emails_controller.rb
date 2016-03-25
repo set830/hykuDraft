@@ -24,4 +24,12 @@ class EmailsController < ApplicationController
 
   end
 
+  def activatedToPartner
+
+  end
+
+  def requestToPartner
+
+  end
+
 end

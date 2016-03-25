@@ -37,6 +37,8 @@ Rails.application.routes.draw do
   get "/hykuCompleteToJoiners", :controller => "emails", :action => "hykuCompleteToJoiners"
   get "/goToPartner", :controller => "emails", :action => "goToPartner"
   get "/capReachedToOrganizer", :controller => "emails", :action => "capReachedToOrganizer"
+  get "/activatedToPartner", :controller => "emails", :action => "activatedToPartner"
+  get "/requestToPartner", :controller => "emails", :action => "requestToPartner"
 
 
 

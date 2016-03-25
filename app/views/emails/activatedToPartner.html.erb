@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hyku Complete to Partner</title>
+    <title>Hyku Activated to Partner</title>
     <link rel='stylesheet' href='/stylesheets/emails/partnerRegistered.css'>
   </head>
 <body>
@@ -26,16 +26,15 @@
       Hi "PartnerName",
     </h2>
 
-    <p class="emailBody">Mark your calendars - a group just booked you!</p>
+    <p class="emailBody">"OrganizerName" is interested in bringing a group to you!</p>
+    <p class="emailBody">Hyku will only process this transaction when "GOMinimum" customers have joined this group. We will notify you when this happens.</p>
+    <p class="emailBody">In the meantime, if you wish to communicate to the group, login to your dashboard.</p>
 
     <div class="emailButtonContainer">
       <a href="http://www.hyku.io/activate/" class="emailButton">
-        Manage Hyku
+        View Hyku
       </a>
     </div>
-
-    <br />
-
 
     <h3 class="logoHeader">
       Group Contact
@@ -59,10 +58,8 @@
       </tr>
     </table>
 
-    <br />
-
     <h3 class="logoHeader">
-      Event Details
+      Pending Event
     </h3>
 
     <hr class="emailHR">
@@ -70,7 +67,7 @@
 
     <table class="emailTable">
       <tr>
-        <td class="emailTableTitle">Purchased</td>
+        <td class="emailTableTitle">Description</td>
         <td class="emailTableDetails">"ProductName"</td>
       </tr>
       <tr>
@@ -79,27 +76,15 @@
       </tr>
       <tr>
         <td class="emailTableTitle">Event Date</td>
-        <td class="emailTableDetails">"EventDate"</td>
+        <td class="emailTableDetails"><b>"EventDate"</b></td>
       </tr>
       <tr>
         <td class="emailTableTitle">Event Time</td>
-        <td class="emailTableDetails">"EventTime"</td>
+        <td class="emailTableDetails"><b>"EventTime"</b></td>
       </tr>
-    </table>
-
-    <br />
-
-    <h3 class="logoHeader">
-      Number in Party
-    </h3>
-
-    <hr class="emailHR">
-    </hr>
-
-    <table class="emailTable">
       <tr>
-        <td class="emailTableTitle">Current Number</td>
-        <td class="emailTableDetails">"CurrentNumberOfJoiners"</td>
+        <td class="emailTableTitle">Min # in Group</td>
+        <td class="emailTableDetails">"GOMinimum"</td>
       </tr>
       <tr>
         <td class="emailTableTitle">Hyku Deadline</td>
@@ -107,7 +92,8 @@
       </tr>
     </table>
 
-    <p class="emailDetailBody">At least "GOthreshold" people are coming. We'll confirm the total number when the hyku expires on "ExpirationDate"</p>
+    <br />
+    <br />
 
   </div>
 
