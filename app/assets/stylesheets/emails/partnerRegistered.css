@@ -180,6 +180,7 @@ table {
     color: rgba(112, 112, 114, 1);
 }
 
+
 tr:nth-child(even){
   background-color: #f2f2f2
 }

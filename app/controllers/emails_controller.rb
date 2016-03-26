@@ -40,7 +40,11 @@ class EmailsController < ApplicationController
 
   end
 
-  def offerCreatedToBusiness
+  def offerCreatedToPartner
+
+  end
+
+  def hykuExpiredToJoiners
 
   end
 

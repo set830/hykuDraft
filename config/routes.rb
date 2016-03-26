@@ -41,7 +41,8 @@ Rails.application.routes.draw do
   get "/requestToPartner", :controller => "emails", :action => "requestToPartner"
   get "/goToJoiner", :controller => "emails", :action => "goToJoiner"
   get "/joinedBeforeGo", :controller => "emails", :action => "joinedBeforeGo"
-  get "/offerCreatedToBusiness", :controller => "emails", :action => "offerCreatedToBusiness"
+  get "/offerCreatedToPartner", :controller => "emails", :action => "offerCreatedToPartner"
+  get "/hykuExpiredToJoiners", :controller => "emails", :action => "hykuExpiredToJoiners"
 
 
 
