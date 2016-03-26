@@ -40,4 +40,8 @@ class EmailsController < ApplicationController
 
   end
 
+  def offerCreatedToBusiness
+
+  end
+
 end

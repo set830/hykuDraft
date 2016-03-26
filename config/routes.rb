@@ -33,7 +33,7 @@ Rails.application.routes.draw do
 
   get "/partnerRegistered", :controller => "emails", :action => "partnerRegistered"
   get "/activateOrganizer", :controller => "emails", :action => "activateOrganizer"
-  get "/hykuCompleteBusiness", :controller => "emails", :action => "hykuCompletePartner"
+  get "/hykuCompletePartner", :controller => "emails", :action => "hykuCompletePartner"
   get "/hykuCompleteToJoiners", :controller => "emails", :action => "hykuCompleteToJoiners"
   get "/goToPartner", :controller => "emails", :action => "goToPartner"
   get "/capReachedToOrganizer", :controller => "emails", :action => "capReachedToOrganizer"
@@ -41,6 +41,7 @@ Rails.application.routes.draw do
   get "/requestToPartner", :controller => "emails", :action => "requestToPartner"
   get "/goToJoiner", :controller => "emails", :action => "goToJoiner"
   get "/joinedBeforeGo", :controller => "emails", :action => "joinedBeforeGo"
+  get "/offerCreatedToBusiness", :controller => "emails", :action => "offerCreatedToBusiness"
 
 
 
