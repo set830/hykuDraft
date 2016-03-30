@@ -48,4 +48,8 @@ class EmailsController < ApplicationController
 
   end
 
+  def goAboutToExpireToOrganizer
+
+  end
+
 end
