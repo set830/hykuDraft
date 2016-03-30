@@ -56,4 +56,8 @@ class EmailsController < ApplicationController
 
   end
 
+  def postGoHykuAboutToExpire
+
+  end
+
 end

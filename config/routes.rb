@@ -45,6 +45,7 @@ Rails.application.routes.draw do
   get "/hykuExpiredToJoiners", :controller => "emails", :action => "hykuExpiredToJoiners"
   get "/goAboutToExpireToOrganizer", :controller => "emails", :action => "goAboutToExpireToOrganizer"
   get "/ccNotWorkingToJoiner", :controller => "emails", :action => "ccNotWorkingToJoiner"
+  get "/postGoHykuAboutToExpire", :controller => "emails", :action => "postGoHykuAboutToExpire"
 
 
 
