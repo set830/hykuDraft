@@ -52,4 +52,8 @@ class EmailsController < ApplicationController
 
   end
 
+  def ccNotWorkingToJoiner
+
+  end
+
 end
