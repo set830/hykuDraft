@@ -51,10 +51,6 @@
       color: rgba(112, 112, 114, 1);
   }
 
-  .noInterchangeColorRows:nth-child(even){
-    background-color: #fff;
-  }
-
   .noInterchangeColorRows{
     border-bottom:1pt solid gray;
   }
