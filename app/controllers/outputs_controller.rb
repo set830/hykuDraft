@@ -52,6 +52,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def pageNotFound
+
+  end
+
   def index
     @outputs = Output.all
   end
