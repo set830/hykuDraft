@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   get "/contact", :controller => "outputs", :action => "contact"
   get "/email", :controller => "outputs", :action => "email"
   get "/pageNotFound", :controller => "outputs", :action => "pageNotFound"
+  get "/help", :controller => "outputs", :action => "help"
 
   get "/partnerRegistered", :controller => "emails", :action => "partnerRegistered"
   get "/activateOrganizer", :controller => "emails", :action => "activateOrganizer"

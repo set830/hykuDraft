@@ -56,6 +56,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def help
+
+  end
+
   def index
     @outputs = Output.all
   end
