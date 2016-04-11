@@ -33,6 +33,8 @@ Rails.application.routes.draw do
   get "/pageNotFound", :controller => "outputs", :action => "pageNotFound"
   get "/help", :controller => "outputs", :action => "help"
 
+  get "/partnerDashboard", :controller => "outputs", :action => "partnerDashboard"
+
   get "/partnerRegistered", :controller => "emails", :action => "partnerRegistered"
   get "/activateOrganizer", :controller => "emails", :action => "activateOrganizer"
   get "/hykuCompletePartner", :controller => "emails", :action => "hykuCompletePartner"

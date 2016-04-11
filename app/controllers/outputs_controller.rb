@@ -60,6 +60,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def partnerDashboard
+
+  end
+
   def index
     @outputs = Output.all
   end
