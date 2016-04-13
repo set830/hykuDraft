@@ -48,7 +48,7 @@ Rails.application.routes.draw do
   get "/joinedBeforeGo", :controller => "emails", :action => "joinedBeforeGo"
   get "/offerCreatedToPartner", :controller => "emails", :action => "offerCreatedToPartner"
   get "/hykuExpiredToJoiners", :controller => "emails", :action => "hykuExpiredToJoiners"
-  get "/goAboutToExpireToOrganizer", :controller => "emails", :action => "goAboutToExpireToOrganizer"
+  get "/preGoHykuAboutToExpireToOrganizer", :controller => "emails", :action => "preGoHykuAboutToExpireToOrganizer"
   get "/ccNotWorkingToJoiner", :controller => "emails", :action => "ccNotWorkingToJoiner"
   get "/postGoHykuAboutToExpire", :controller => "emails", :action => "postGoHykuAboutToExpire"
   get "/hykuExpiredToPartner", :controller => "emails", :action => "hykuExpiredToPartner"

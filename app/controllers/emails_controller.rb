@@ -48,7 +48,7 @@ class EmailsController < ApplicationController
 
   end
 
-  def goAboutToExpireToOrganizer
+  def preGoHykuAboutToExpireToOrganizer
 
   end
 
