@@ -64,6 +64,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def userAccount
+
+  end
+
   def index
     @outputs = Output.all
   end
