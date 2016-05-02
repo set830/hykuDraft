@@ -2,7 +2,6 @@
   color: rgba(33, 125, 187, 1);
 }
 
-
 .email-background{
   background: #eeeeee;
   padding: 10px;
@@ -34,7 +33,6 @@
   line-height: 1.3;
   text-align: left;
 }
-
 
 .emailHR{
   display: block;
@@ -144,18 +142,10 @@ ul.ulEmail li.dollar:before {
   }
 
 .footer-email{
+  width: 25px;
   background: none;
-  font-size: 12;
+  float: center;
   padding: 20px;
-  text-align: center;
-}
-
-.socialMediaFooter{
-  margin: 3px;
-  font-size: 28px;
-  font-weight: 300;
-  color: rgba(150, 150, 150, 1);
-  line-height: 1.5;
 }
 
 .emailTable {
@@ -180,8 +170,14 @@ ul.ulEmail li.dollar:before {
     color: rgba(112, 112, 114, 1);
 }
 
-
-
 .unsubscribe{
   color: rgba(112, 112, 114, 1);
+}
+
+.logoTop {
+  width: 50px;
+}
+
+.logoWrap{
+  margin: 15px;
 }

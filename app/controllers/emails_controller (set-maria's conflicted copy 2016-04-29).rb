@@ -60,7 +60,7 @@ class EmailsController < ApplicationController
 
   end
 
-  def createAccountToJoiner
+  def addtocalendar
 
   end
 

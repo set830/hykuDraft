@@ -52,7 +52,7 @@ Rails.application.routes.draw do
   get "/ccNotWorkingToJoiner", :controller => "emails", :action => "ccNotWorkingToJoiner"
   get "/postGoHykuAboutToExpire", :controller => "emails", :action => "postGoHykuAboutToExpire"
   get "/hykuExpiredToPartner", :controller => "emails", :action => "hykuExpiredToPartner"
-  get "/createAccountToJoiner", :controller => "emails", :action => "createAccountToJoiner"
+  get "/addtocalendar", :controller => "emails", :action => "addtocalendar"
 
 
 
