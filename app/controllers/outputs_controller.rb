@@ -68,6 +68,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def offerNotAvailable
+
+  end
+
   def index
     @outputs = Output.all
   end

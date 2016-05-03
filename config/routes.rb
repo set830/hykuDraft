@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   get "/contact", :controller => "outputs", :action => "contact"
   get "/email", :controller => "outputs", :action => "email"
   get "/pageNotFound", :controller => "outputs", :action => "pageNotFound"
+  get "/offerNotAvailable", :controller => "outputs", :action => "offerNotAvailable"
   get "/help", :controller => "outputs", :action => "help"
 
   get "/partnerDashboard", :controller => "outputs", :action => "partnerDashboard"
