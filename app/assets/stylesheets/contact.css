@@ -1,3 +1,48 @@
+#contactStatement{
+  max-width: 600px;
+  padding: 20px;
+}
+
+#contactGeneralPanel {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contactLeftPanel {
+  padding: 20px;
+  width: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #F7F7F7;
+}
+
+#contactRightPanel {
+  padding: 20px;
+  width: 50%;
+  background-color: rgba(247, 247, 247, 1);
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: #F7F7F7;
+}
+
+#contactRightPanel:hover {
+    outline: 1px solid gray;
+}
+
+#contactEmailFont{
+  font-size:10px;
+}
+
+#contactItem {
+  text-align: left;
+  font-size: 30px;
+  padding: 5px;
+}
+
+
+/*
 #contactPhonePanel {
     max-width: 400px;
     min-width: 400px;
@@ -52,4 +97,45 @@
 
 #contactIcon {
     font-size:110px;
+}
+*/
+
+
+@media
+only screen and (max-width: 600px),
+{
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+
+  }
+
+  tr { }
+
+  td {
+    /* Behave  like a "row" */
+  }
+
+  td:before {
+    /* Now like a table header */
+
+    /* Top/left values mimic padding */
+
+  }
+
+  #contactLeftPanel{
+    width: 80%;
+  }
+  #contactRightPanel{
+    width: 80%;
+  }
 }
