@@ -64,4 +64,12 @@ class EmailsController < ApplicationController
 
   end
 
+  def requestApproved
+
+  end
+
+  def requestAmended
+
+  end
+
 end
