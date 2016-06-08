@@ -77,52 +77,22 @@
               </div>
             </div>
           </div>
+          <div class="jumbotron lightgray">
           <div class="row">
-            <div class="col-sm-offset-1 col-sm-7">
+            <div class="col-sm-offset-1 col-sm-5">
               <div class="panel panel-info">
-                <div class="panel-heading">
-                  <div class="row">
-                    <div class="col-xs-5">
-                      <font color="white">
-                        <i>
-                          Minimum Unmet
-                          <!-- If GO is reached, change wording to "It's a GO!"-->
-                        </i>
-                      </font>
-                    </div>
-                    <div class="col-xs-7">
-                      <div class="timeContainer">
-                        <font color="white">
-                          <i class="fa fa-clock-o">
-                          </i>
-                        </font>
-                          <i>
-                            12 hrs, 13 mins left
-                          </i>
-                      </div>
-                    </div>
-                  </div>
+                <div class="panel-heading centeralign">
+                  GO Status
                 </div>
                 <div class="panel-body">
+                  <div id="goStatusPanel">
                   <div class="row">
-                    <div class="col-xs-12">
-                      <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');">
-                        <div class="btn btn-success btn-joinersInfoButton">
-                          <font color="white">
-                            <i class="fa fa-user"></i>
-                            4 Joined
-                          </font>
-                        </div>
-                      </a>
-                      <small>
-                        <i class="darkergray moreToGo">
-                          but <b>3 more</b> to GO and to $149pp
-                            <!-- if GO is reached, then change wording to "and X more to $129"
-                              -->
-                        </i>
-                        </font>
-                      </small>
+                    <div class="centeralign blue">
+                      Pending: Only 3 more to GO
+                      <!-- If GO is reached, change wording to "It's a GO!"-->
                     </div>
+                    <hr class="activeLine">
+                    </hr>
                   </div>
                   <div class="row">
                     <div class="col-sm-12">
@@ -132,103 +102,105 @@
                               60% Complete
                             </span>
                         </div>
-
-                      </div>
-
-                    </div>
-                    <div class="col-sm-3">
-                      <div align="center">
-
                       </div>
                     </div>
                   </div>
-
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-3">
-              <div class="panel panel-info lightgray joinButtonContainer">
-                <div class="panel-heading">
-                  <font class="currentPriceContainer whiteC">
-                     4-Joined Price | $199 pp
-                  </font>
+            <div class="col-sm-5">
+              <div class="panel panel-success">
+                <div class="panel-heading centeralign">
+                  <i class="fa fa-clock-o">
+                  </i>
+                  <i>
+                    12 hrs, 13 mins left to hit GO
+                  </i>
+                  <!-- If GO is reached, change wording to "<time left> left"-->
                 </div>
                 <div class="panel-body">
-                  <button type="button" class="btn btn-success btn-xlarge">
-                    <large>
-                      JOIN
-                    </large>
-                  </button>
+                  <div class="row">
+                    <div class="col-sm-12 centeralign">
+                      <button type="button" class="btn btn-success btn-xlarge">
+                        <large>
+                          JOIN
+                        </large>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div align="center">
+                  <h6 class="darkgray centeralign">
+                    You'll only be charged if it's a GO and at the <u>lowest</u> group price achieved.
+                  </h6>
                 </div>
               </div>
-              <div align="center">
-                <h6 class="darkgray centeralign">
-                  You'll only be charged if it's a GO and at the <u>lowest</u> group price achieved.
-                </h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-offset-1 col-sm-5">
+              <div class="panel panel-info">
+                <div class="panel-heading centeralign">
+                  Price Status
+                </div>
+                <div class="panel-body">
+                  <div id="goStatusPanel">
+                    <div class="row">
+                      <div class="centeralign blue">
+                        Current Price: $36.34
+                      </div>
+                      <hr class="activeLine">
+                      </hr>
+                    </div>
+                    <div class="row">
+                      <div class="centeralign darkgray">
+                        If you join, price will adjust to <br>
+                        <span class="blue">$35.12</span> <br>
+                        for everyone
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
               </div>
             </div>
-          <div class="row">
-            <div class="col-sm-offset-1 col-sm-10">
+            <div class="col-sm-5">
+              <div class="panel panel-info" id="joinedPanel">
+                <div class="panel-heading centeralign">
+                  (X) Joined
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-sm-12 centeralign">
+                      <table class="popupTable table table-striped">
+                        <tr>
+                          <td>Marilyn J</td>
+                        </tr>
+                        <tr>
+                          <td>Rose B</td>
+                        </tr>
+                        <tr>
+                          <td>Mark E</td>
+                        </tr>
+                        <tr>
+                          <td>Sally C</td>
+                        </tr>
+                        <tr>
+                          <td>Sally C</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
 
+              </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<div id="popupBoxOnePosition">
-  <div class="popupBoxWrapper">
-    <div class="popupBoxContent">
-      <div class="row">
-        <div class="col-xs-3 centeralign">
-        </div>
-        <div class="col-xs-6 centeralign blue">
-          <h4>
-            Joined (4)
-          </h4>
-        </div>
-        <div class="col-xs-3 centeralign blue">
-          <a href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');">Close</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <table class="popupTable table">
-            <tr class="noInterchangeColorRows">
-              <td class="popupTableTitle">Marilyn J</td>
-              <td class="popupTableDetails">Organizer</td>
-            </tr>
-            <tr class="noInterchangeColorRows">
-              <td class="popupTableTitle">Rose B</td>
-              <td class="popupTableDetails">Joined</td>
-            </tr>
-            <tr class="noInterchangeColorRows">
-              <td class="popupTableTitle">Mark E</td>
-              <td class="popupTableDetails">Joined</td>
-            </tr>
-            <tr class="noInterchangeColorRows">
-              <td class="popupTableTitle">Sally C</td>
-              <td class="popupTableDetails">Joined</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<script type="text/javascript">
-      <!--
-          function toggle_visibility(id) {
-             var e = document.getElementById(id);
-             if(e.style.display == 'block')
-                e.style.display = 'none';
-             else
-                e.style.display = 'block';
-          }
-      //-->
-    </script>
 

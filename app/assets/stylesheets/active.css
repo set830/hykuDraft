@@ -1,5 +1,16 @@
+  #goStatusPanel{
+    margin: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   #partnerPostButton{
     text-align: right;
+  }
+
+  #joinedPanel{
+    max-height: 230px;
+    overflow-y: scroll;
   }
 
   #popupBoxOnePosition{
@@ -37,7 +48,9 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+
 }
 
   .popupTableTitle {
@@ -122,6 +135,11 @@
   .currentPriceContainer{
   }
 
+  .panelHeader-gray > .panel-heading  {
+    background-color: rgba(170, 170, 170, 1);
+    border: 2px solid rgba(170, 170, 170, 1);
+  }
+
   .joinButtonContainer{
     text-align: center;
   }
@@ -130,15 +148,15 @@
     padding: 2px 20px;}
 
   .panel-green {
-    border: 2px solid #18BC9C;}
+    border: 2px solid #18BC9C;
+  }
 
   .moreToGo{
     margin-left: 2px;
   }
 
   .timeContainer {
-    text-align: right;
-    margin-right: 10px;
+    text-align: center;
   }
 
   .panel-blue {
@@ -149,3 +167,18 @@
 
   .panel-red {
     border: 2px solid #E74C3C;}
+
+  .activeLine {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: rgba(150, 150, 150, 1);
+    background-color: rgba(150, 150, 150, 1);
+    border-color: rgba(150, 150, 150, 1);
+  }
+
