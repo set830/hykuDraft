@@ -77,126 +77,126 @@
               </div>
             </div>
           </div>
-          <div class="jumbotron lightgray">
-          <div class="row">
-            <div class="col-sm-offset-1 col-sm-5">
-              <div class="panel panel-info">
-                <div class="panel-heading centeralign">
-                  GO Status
-                </div>
-                <div class="panel-body">
-                  <div id="goStatusPanel">
-                  <div class="row">
-                    <div class="centeralign blue">
-                      Pending: Only 3 more to GO
-                      <!-- If GO is reached, change wording to "It's a GO!"-->
-                    </div>
-                    <hr class="activeLine">
-                    </hr>
+          <div class="jumbotron lightgray" id="activeJumbotron">
+            <div class="row">
+              <div class="col-sm-offset-1 col-sm-5">
+                <div class="panel panel-info">
+                  <div class="panel-heading centeralign">
+                    GO Status
                   </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="progress progress-striped">
-                        <div class="progress-bar progress-bar-custom active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                            <span class="sr-only">
-                              60% Complete
-                            </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-5">
-              <div class="panel panel-success">
-                <div class="panel-heading centeralign">
-                  <i class="fa fa-clock-o">
-                  </i>
-                  <i>
-                    12 hrs, 13 mins left to hit GO
-                  </i>
-                  <!-- If GO is reached, change wording to "<time left> left"-->
-                </div>
-                <div class="panel-body">
-                  <div class="row">
-                    <div class="col-sm-12 centeralign">
-                      <button type="button" class="btn btn-success btn-xlarge">
-                        <large>
-                          JOIN
-                        </large>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div align="center">
-                  <h6 class="darkgray centeralign">
-                    You'll only be charged if it's a GO and at the <u>lowest</u> group price achieved.
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-offset-1 col-sm-5">
-              <div class="panel panel-info">
-                <div class="panel-heading centeralign">
-                  Price Status
-                </div>
-                <div class="panel-body">
-                  <div id="goStatusPanel">
+                  <div class="panel-body">
+                    <div id="goStatusPanel">
                     <div class="row">
                       <div class="centeralign blue">
-                        Current Price: $36.34
+                        Pending: Only 3 more to GO
+                        <!-- If GO is reached, change wording to "It's a GO!"-->
                       </div>
                       <hr class="activeLine">
                       </hr>
                     </div>
                     <div class="row">
-                      <div class="centeralign darkgray">
-                        If you join, price will adjust to <br>
-                        <span class="blue">$35.12</span> <br>
-                        for everyone
+                      <div class="col-sm-12">
+                        <div class="progress progress-striped">
+                          <div class="progress-bar progress-bar-custom active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                              <span class="sr-only">
+                                60% Complete
+                              </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-5">
-              <div class="panel panel-info" id="joinedPanel">
-                <div class="panel-heading centeralign">
-                  (X) Joined
-                </div>
-                <div class="panel-body">
-                  <div class="row">
-                    <div class="col-sm-12 centeralign">
-                      <table class="popupTable table table-striped">
-                        <tr>
-                          <td>Marilyn J</td>
-                        </tr>
-                        <tr>
-                          <td>Rose B</td>
-                        </tr>
-                        <tr>
-                          <td>Mark E</td>
-                        </tr>
-                        <tr>
-                          <td>Sally C</td>
-                        </tr>
-                        <tr>
-                          <td>Sally C</td>
-                        </tr>
-                      </table>
                     </div>
                   </div>
                 </div>
-
+              </div>
+              <div class="col-sm-5">
+                <div class="panel panel-info">
+                  <div class="panel-heading centeralign">
+                    Price Status
+                  </div>
+                  <div class="panel-body">
+                    <div id="priceStatusPanel">
+                      <div class="row">
+                        <div class="centeralign blue">
+                          Current Price: $36.34
+                        </div>
+                        <hr class="activeLine">
+                        </hr>
+                      </div>
+                      <div class="row">
+                        <div class="centeralign darkgray">
+                          If you join, price will adjust to <br>
+                          <span class="blue">$35.12</span> <br>
+                          for everyone
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="col-sm-offset-1 col-sm-5">
+                <div class="panel panel-success">
+                  <div class="panel-heading centeralign">
+                    <i class="fa fa-clock-o">
+                    </i>
+                    <i>
+                      12 hrs, 13 mins left to hit GO
+                    </i>
+                    <!-- If GO is reached, change wording to "<time left> left"-->
+                  </div>
+                  <div class="panel-body">
+                    <div id="joinStatusPanel">
+                      <div class="row">
+                        <div class="col-sm-12 centeralign">
+                          <button type="button" class="btn btn-success btn-xlarge" id="joinButton">
+                            <large>
+                              JOIN
+                            </large>
+                          </button>
+                        </div>
+                      </div>
+                      <div align="center">
+                        <h6 class="darkgray centeralign">
+                          You'll only be charged if it's a GO and at the <u>lowest</u> group price achieved.
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-5">
+                <div class="panel panel-info">
+                  <div class="panel-heading centeralign">
+                    5 Joined
+                  </div>
+                  <div class="panel-body" id="joinedPanel">
+                    <div class="row">
+                      <div class="col-sm-12 centeralign">
+                        <table class="popupTable table table-striped">
+                          <tr>
+                            <td>Marilyn J</td>
+                          </tr>
+                          <tr>
+                            <td>Rose B</td>
+                          </tr>
+                          <tr>
+                            <td>Mark E</td>
+                          </tr>
+                          <tr>
+                            <td>Sally C</td>
+                          </tr>
+                          <tr>
+                            <td>Sally C</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
