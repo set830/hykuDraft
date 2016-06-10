@@ -4,6 +4,17 @@
     margin-right: auto;
   }
 
+  #spotsLeftInfo{
+    color: rgba(231, 76, 60, 1);
+    background-color: white;
+  }
+
+  #businessCommentPanel{
+    max-height: 152px;
+    min-height: 152px;
+    overflow-y: scroll;
+  }
+
   #priceStatusPanel{
     margin-top: 10px;
     margin-left: auto;
@@ -12,10 +23,8 @@
   }
 
   #joinStatusPanel{
-    margin: 5px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2px;
   }
 
   #joinButton {
@@ -36,8 +45,8 @@
   }
 
   #joinedPanel{
-    max-height: 190px;
-    min-height: 190px;
+    max-height: 202px;
+    min-height: 202px;
     overflow-y: scroll;
   }
 

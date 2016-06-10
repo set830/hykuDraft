@@ -64,19 +64,22 @@
               </form>
 
               <!--if partner posted a message-->
-
-              <h5 class="darkgray big">
-                <blockquote>
-                  We've got some special surprises heading your way. Bring something warm cause it's gonna be a bit chilly that day.
-                  <div class = "text-right">
-                    <i>
-                      <small class="darkergray">
-                        Skydive Chi
-                      </small>
-                    </i>
-                  </div>
-                </blockquote>
-              </h5>
+              <div class="panel panel">
+              <div class="panel-body" id="businessCommentPanel">
+                <h5 class="darkgray big">
+                  <blockquote>
+                    We've got some special surprises heading your way. Bring something warm cause it's gonna be a bit chilly that day.
+                    <div class = "text-right">
+                      <i>
+                        <small class="darkergray">
+                          Skydive Chi
+                        </small>
+                      </i>
+                    </div>
+                  </blockquote>
+                </h5>
+              </div>
+              </div>
             </div>
           </div>
           <div class="row">
@@ -120,8 +123,17 @@
                     <div id="goStatusPanel">
                     <div class="row">
                       <div class="centeralign blue">
+                        <!-- If before GO, use below:-->
                         Pending: Only 3 more to GO
-                        <!-- If GO is reached, change wording to "It's a GO!"-->
+
+                        <!-- If GO, change wording to "It's a GO!"-->
+
+                        <!-- If failed to reach GO, change wording to
+                          <span id="spotsLeftInfo">
+                            Expired
+                          </span>
+                        -->
+
                       </div>
                       <hr class="activeLine">
                       </hr>
@@ -151,15 +163,26 @@
                       <div class="row">
                         <div class="centeralign blue">
                           Current Price: $36.34
+                          <!-- if before GO, show the price as the goMinimum price -->
                         </div>
                         <hr class="activeLine">
                         </hr>
                       </div>
                       <div class="row">
                         <div class="centeralign darkgray">
-                          If you join, price will adjust to <br>
+
+                          <!-- if before GO, use this instead:
+                            If group hits GO, then price <br>
+                            may decrease for everyone <br>
+                            as each new person joins
+                           -->
+
+                          <!-- if after GO, use below-->
+                          If you join, price will decrease to <br>
                           <span class="blue">$35.12</span> <br>
+                          <!-- if max discount reached, add "(lowest group price acheived)" next to price -->
                           for everyone
+
                         </div>
                       </div>
                     </div>
@@ -174,9 +197,24 @@
                     <i class="fa fa-clock-o">
                     </i>
                     <i>
+                      <!-- If before GO use below: -->
                       12 hrs, 13 mins left to hit GO
+
+                      <!-- If GO, delete the "to hit GO" part-->
+
+                      <!-- If near Cap
+                        <span id="spotsLeftInfo">
+                           5 spots left
+                        </span>
+                      -->
+
+                      <!-- If Cap reached
+                        <span id="spotsLeftInfo">
+                           Max Reached
+                        </span>
+                      -->
+
                     </i>
-                    <!-- If GO is reached, change wording to "<time left> left"-->
                   </div>
                   <div class="panel-body">
                     <div id="joinStatusPanel">
@@ -190,8 +228,8 @@
                         </div>
                       </div>
                       <div align="center">
-                        <h6 class="darkgray centeralign">
-                          You'll only be charged if it's a GO and at the <u>lowest</u> group price achieved.
+                        <h6 class="darkgray centeralign big">
+                          You'll only be charged if it's a GO. <br> If GO, you'll pay the <u>lowest</u> group price achieved.
                         </h6>
                       </div>
                     </div>
@@ -208,19 +246,19 @@
                       <div class="col-sm-12 centeralign">
                         <table class="popupTable table table-striped">
                           <tr>
-                            <td>Marilyn J</td>
+                            <td>Marilyn J.</td>
                           </tr>
                           <tr>
-                            <td>Rose B</td>
+                            <td>Rose B.</td>
                           </tr>
                           <tr>
-                            <td>Mark E</td>
+                            <td>Mark E.</td>
                           </tr>
                           <tr>
-                            <td>Sally C</td>
+                            <td>Sally C.</td>
                           </tr>
                           <tr>
-                            <td>Sally C</td>
+                            <td>Sally C.</td>
                           </tr>
                         </table>
                       </div>
