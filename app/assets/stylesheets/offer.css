@@ -48,6 +48,11 @@
     padding: 15px;
 }
 
+#offerEmailPadding {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 
 ul.icon li.plus:before {
     content: "\f067";

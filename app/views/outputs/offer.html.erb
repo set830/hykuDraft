@@ -71,11 +71,14 @@
               </div>
             </div>
             <div class="row">
-              <br />
-              <p class="big darkgray centeralign" id="offerPadding">
-               When time selected, give 3 closest time options here. If none found, display "No Times Available in System" and change "Activate" button to "Request Time" with * description
-              </p>
+              <div class="col-sm-12">
+                <h5 class="blue">
+                  Email
+                </h5>
+                <input type="text" class="form-control centeralign" placeholder="example@email.com" aria-describedby="email">
+              </div>
             </div>
+            <br /><br />
             <div class="row centeralign">
               <button type="button" class="btn btn-success" id="activateButton">Activate</button>
               <br />
@@ -184,7 +187,7 @@
             <div class="panel panel-default">
               <div class="panel-body" id="fixedHeight">
                 <h4 class="centeralign big blue">
-                  9-15 people
+                  14 people
                 </h4>
                 <h6 class="darkgray">
                   <div class="centeralign">
@@ -198,7 +201,7 @@
               </div>
               <div class="panel-footer">
                 <h5 class="centeralign big green">
-                  ~$36-41 pp
+                  $37 pp
                 </h5>
               </div>
             </div>
@@ -207,7 +210,7 @@
             <div class="panel panel-default">
               <div class="panel-body" id="fixedHeight">
                 <h4 class="centeralign big blue">
-                  16+ people
+                  20 people
                 </h4>
                 <h6 class="darkgray">
                 <div class="centeralign">
@@ -222,13 +225,15 @@
               </div>
               <div class="panel-footer">
                 <h5 class="centeralign big green">
-                  $35 pp
+                  $32 pp
                 </h5>
               </div>
             </div>
           </div>
         </div>
-
+        <span class="darkgray"><small>
+          *Price dynamically adjusts based on number in group
+        </small></span>
       <br />
       <br />
       <HR id="offerHR">
@@ -292,7 +297,7 @@
   </div>
 
 </div>
-
+<br /><br /><br />
 
 <%= render 'footer' %>
 
