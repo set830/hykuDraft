@@ -12,7 +12,7 @@
 }
 
 #offerCover{
-    background-image: url('/images/partnerCover.jpg');
+    background-image: url('/images/starrynight.jpg');
     min-height: 68%;  /* Fallback for browsers do NOT support vh unit */
     min-height: 68vh; /* These two lines are counted as one :-)       */
 
