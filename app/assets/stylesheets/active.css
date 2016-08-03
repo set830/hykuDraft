@@ -9,6 +9,12 @@
     background-color: white;
   }
 
+  #activeForm {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -350px;
+}
+
   #businessCommentPanel{
     max-height: 152px;
     min-height: 152px;
@@ -215,4 +221,6 @@
     background-color: rgba(150, 150, 150, 1);
     border-color: rgba(150, 150, 150, 1);
   }
+
+
 
