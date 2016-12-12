@@ -44,6 +44,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def offer3
+
+  end
+
   def contact
 
   end

@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get "/press", :controller => "outputs", :action => "press"
   get "/offer", :controller => "outputs", :action => "offer"
   get "/offer2", :controller => "outputs", :action => "offer2"
+  get "/offer3", :controller => "outputs", :action => "offer3"
   get "/contact", :controller => "outputs", :action => "contact"
   get "/email", :controller => "outputs", :action => "email"
   get "/pageNotFound", :controller => "outputs", :action => "pageNotFound"
