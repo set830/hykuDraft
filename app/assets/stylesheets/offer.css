@@ -12,7 +12,7 @@
 }
 
 #offerCover{
-    background-image: url('/images/whiskeyFest.jpg');
+    background-image: url('/images/312elements.png');
     min-height: 68%;  /* Fallback for browsers do NOT support vh unit */
     min-height: 68vh; /* These two lines are counted as one :-)       */
 
