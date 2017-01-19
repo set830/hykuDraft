@@ -12,6 +12,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def forallhome
+
+  end
+
   def about
 
   end

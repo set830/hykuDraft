@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get "/active", :controller => "outputs", :action => "active"
   get "/active2", :controller => "outputs", :action => "active2"
   get "/homepage", :controller => "outputs", :action => "homepage"
+  get "/forallhome", :controller => "outputs", :action => "forallhome"
   get "/about", :controller => "outputs", :action => "about"
   get "/pricing", :controller => "outputs", :action => "pricing"
   get "/discover", :controller => "outputs", :action => "discover"
