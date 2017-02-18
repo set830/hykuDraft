@@ -1,0 +1,328 @@
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='js/wow.mis.js')
+    script.
+      new WOW().init();
+    // Override Navbar to add navbarImage, not DRY
+    nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Hyku
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/users/sign_in') Partner with Hyku
+            li
+              a(href='/users/sign_up') Log In
+  body
+    .container-fluid
+      .row
+        .col-sm-offset-1.col-sm-10.vcenter
+    .jumbotron.lightgray
+      br
+      br
+      br
+      #personalized.container.white
+        .container
+          br
+          br
+          ul.nav.nav-pills.nav-justified
+            li.active.inactive(role='presentation')
+              a(href='#newPill', aria-controls='Create a New Offer', role='tab', data-toggle='pill') Create a New Offer
+            li.inactive(role='presentation')
+              a(href='#offerPill', aria-controls='Offers', role='tab', data-toggle='pill') Offers
+            li.inactive(role='presentation')
+              a(href='#editPill', aria-controls='Edit Profile', role='tab', data-toggle='pill') Edit Profile
+            li.inactive(role='presentation')
+              a(href='#bankPill', aria-controls='Bank Account', role='tab', data-toggle='pill') Bank Account
+          .tab-content
+            #newPill.tab-pane.fade.in.active
+              br
+              br
+              button.btn.btn-default(type='button') Reload
+              br
+              small#refreshHelp.form-text.text-muted with previously submitted data
+              br
+              form
+                h3.blue
+                  | Event Details
+                hr.blueline
+                .form-group
+                  label(for='eventTitle')
+                    h4.darkergray Event Title
+                  input#eventTitle.form-control(type='text', aria-describedby='eventTitle', placeholder='Provide a short distinct name')
+                .row
+                  .col-sm-4
+                    .form-group
+                      label(for='eventDate')
+                        h4.darkergray Event Date
+                      input#eventDate.form-control(type='date', aria-describedby='eventDate', placeholder='May 12, 2017')
+                  .col-sm-4
+                    .form-group
+                      label(for='eventStartTime')
+                        h4.darkergray Start Time
+                      input#eventStartTime.form-control(type='time', aria-describedby='eventStartTime', placeholder='3:00pm')
+                  .col-sm-4
+                    .form-group
+                      label(for='eventEndTime')
+                        h4.darkergray End Time
+                      input#eventEndTime.form-control(type='time', aria-describedby='eventEndTime', placeholder='5:00pm')
+                br
+                h4.darkergray Location
+                .form-group
+                  input#eventVenue.form-control(type='text', aria-describedby='eventVenue', placeholder="Enter the Venue's Name")
+                  input#eventStreetAddress.form-control(type='text', aria-describedby='eventStreetAddress', placeholder='Street Address')
+                  input#eventStreetAddress2.form-control(type='text', aria-describedby='eventStreetAddress2', placeholder='Street Address 2')
+                  input#eventNeighborhood.form-control(type='text', aria-describedby='eventNeighborhood', placeholder='Neighborhood')
+                  input#eventCity.form-control(type='text', aria-describedby='eventCity', placeholder='City')
+                  .row
+                    .col-sm-6
+                      input#eventState.form-control(type='text', aria-describedby='eventState', placeholder='State')
+                    .col-sm-6
+                      input#eventZip.form-control(type='text', aria-describedby='eventZip', placeholder='Zip Code')
+                br
+                h4.darkergray Cover Photo
+                .form-group
+                  input#coverPhoto.form-control-file(type='file', aria-describedby='coverPhoto')
+                  small#fileHelp.form-text.text-muted JPEG or PNG at least 400 pixels wide and 150 pixels tall
+                br
+                h3.blue
+                  | Pricing Details
+                hr.blueline
+                .form-group
+                  label(for='individualPrice')
+                    h4.darkergray Individual Price
+                  .row
+                    .col-sm-6
+                      input#retailPrice.form-control(type='text', placeholder='Retail Price')
+                    .col-sm-6
+                      input#offerPrice.form-control(type='text', aria-describedby='offerPrice', placeholder='Offer Price')
+                .form-group
+                  label(for='groupPrice')
+                    h4.darkergray Group Price
+                  .row
+                    .col-sm-6
+                      input#groupSize.form-control(type='text', placeholder='Group Size')
+                    .col-sm-6
+                      input#groupPrice.form-control(type='text', aria-describedby='groupPrice', placeholder='Discounted Per Person Price')
+                  small#neighborhoodHelp.form-text.text-muted
+                    | For a group of this size, we will charge each person this price.
+                    br
+                    | For groups less than this number, we will dynamically calculate the price based on the offer price and this discounted price.
+                    br
+                    | For groups greater than this number, we will continue to charge this discounted price.
+                .form-group
+                  label(for='eventPerks')
+                    h4.darkergray Perks
+                  .row
+                    .col-sm-6
+                      input#groupSize.form-control(type='text', placeholder='For this Group Size')
+                    .col-sm-6
+                      input#groupPrice.form-control(type='text', aria-describedby='groupPrice', placeholder='Description of Perk')
+                  .row
+                    .col-sm-6
+                      input#groupSize.form-control(type='text', placeholder='For this Group Size')
+                    .col-sm-6
+                      input#groupPrice.form-control(type='text', aria-describedby='groupPrice', placeholder='Description of Perk')
+                  .row
+                    .col-sm-6
+                      input#groupSize.form-control(type='text', placeholder='For this Group Size')
+                    .col-sm-6
+                      input#groupPrice.form-control(type='text', aria-describedby='groupPrice', placeholder='Description of Perk')
+                  small#neighborhoodHelp.form-text.text-muted For future version. Comment out this code for now.
+                .form-group
+                  label(for='eventTitle')
+                    h4.darkergray Restrictions
+                  .row
+                    .col-sm-6
+                      input#groupMax.form-control(type='text', placeholder='Max Group Size')
+                    .col-sm-6
+                  small#neighborhoodHelp.form-text.text-muted
+                    | Size of group restricted to this number. If unlimited number can join group, leave blank.
+                .form-group
+                  input#groupSize.form-control(type='text', placeholder='Fine Print Description Bullet Point 1')
+                  input#groupPrice.form-control(type='text', aria-describedby='groupPrice', placeholder='Fine Print Description Bullet Point 2')
+                  input#groupPrice.form-control(type='text', aria-describedby='groupPrice', placeholder='Fine Print Description Bullet Point 3')
+                  small#neighborhoodHelp.form-text.text-muted
+                    | Use this to communicate any important information (e.g. refunds, exchanges, etc.)
+                br
+                h3.blue
+                  | Company Details
+                hr.blueline
+                .form-group
+                  label(for='Partner Description')
+                    h4.darkergray Description
+                  .row
+                    .col-sm-6
+                      input#companyDisplayName.form-control(type='text', aria-describedby='companyDisplayName', placeholder='Company Name')
+                    .col-sm-6
+                  .row
+                    .col-sm-12
+                      textarea#exampleTextarea.form-control(rows='3', placeholder='Provide a short company description')
+                .form-group
+                  label(for='businessContact')
+                    h4.darkergray Contact
+                  .row
+                    .col-sm-6
+                      input#contactPhoneNumber.form-control(type='text', aria-describedby='contactPhoneNumber', placeholder='Phone Number')
+                    .col-sm-6
+                      input#contactEmail.form-control(type='email', aria-describedby='contactEmail', placeholder='E-mail')
+                br
+                button.btn.btn-success.btn-large(type='submit') Submit
+              br
+              br
+            #offerPill.tab-pane.fade
+              br
+              br
+              .container
+                .panel.panel-default.dashboardPanel
+                  .panel-body
+                    .container
+                      .row
+                        .col-xs-12
+                          h4.blue
+                            | Created Offers
+                          br
+                          .scrollit
+                            table.table.table-bordered.table-striped.table-hover.table-responsive.centeralign
+                              col(width='25%')
+                              col(width='25%')
+                              col(width='25%')
+                              col(width='25%')
+                              tr
+                                th.centeralign Creation Date
+                                th.centeralign Event Date
+                                th.centeralign Product Name
+                                th.centeralign Hyku Page
+                              tr.darkergray
+                                td "CreatedDate"
+                                td "EventDate"
+                                td "ProductName"
+                                td.darkergray.centeralign
+                                  a(href='') View
+                              tr.darkergray
+                                td "CreatedDate"
+                                td "EventDate"
+                                td "ProductName"
+                                td.darkergray.centeralign
+                                  a(href='') View
+                              tr.darkergray
+                                td "CreatedDate"
+                                td "EventDate"
+                                td "ProductName"
+                                td.darkergray.centeralign
+                                  a(href='') View
+              br
+              br
+              .container
+                .panel.panel-default.dashboardPanel
+                  .panel-body
+                    .container
+                      .row
+                        .col-xs-12
+                          h4.blue
+                            | Activated Hykus
+                          br
+                          .scrollit
+                            table.table.table-bordered.table-striped.table-hover.table-responsive.centeralign
+                              col(width='16.6%')
+                              col(width='16.6%')
+                              col(width='16.6%')
+                              col(width='16.6%')
+                              col(width='16.6%')
+                              col(width='16.6%')
+                              tr
+                                th.centeralign Event Date
+                                th.centeralign Product Name
+                                th.centeralign Time Left
+                                th.centeralign Number of Joiners
+                                th.centeralign Organizer Email
+                                th.centeralign Hyku Page
+                              tr.darkergray
+                                td "EventDate"
+                                td "ProductName"
+                                td "TimeLeft"
+                                td "NumberOfJoiners"
+                                td "OrganizerEmail"
+                                td.darkergray.centeralign
+                                  a(href='') View
+                              tr.darkergray
+                                td "EventDate"
+                                td "ProductName"
+                                td "TimeLeft"
+                                td "NumberOfJoiners"
+                                td "OrganizerEmail"
+                                td.darkergray.centeralign
+                                  a(href='') View
+                              tr.darkergray
+                                td "EventDate"
+                                td "ProductName"
+                                td "TimeLeft"
+                                td "NumberOfJoiners"
+                                td "OrganizerEmail"
+                                td.darkergray.centeralign
+                                  a(href='') View
+            #editPill.tab-pane.fade
+              br
+              br
+              form
+                h3.blue
+                  | Update Contact Information
+                hr.blueline
+                .form-group
+                  label(for='partnerName')
+                    h4.darkergray Business Name
+                  input#partnerName.form-control(type='text', aria-describedby='partnerName', placeholder='')
+                .row
+                  .col-sm-6
+                    .form-group
+                      label(for='ownerFirstName')
+                        h4.darkergray Owner Name
+                      input#ownerFirstName.form-control(type='date', aria-describedby='ownerFirstName', placeholder='First Name')
+                  .col-sm-6
+                    .form-group
+                      label(for='ownerLastName')
+                        h4.whiteC .
+                      input#ownerLastName.form-control(type='time', aria-describedby='ownerLastName', placeholder='Last Name')
+                .row
+                  .col-sm-6
+                    .form-group
+                      label(for='ownerPhoneNumber')
+                        h4.darkergray Contact
+                      input#ownerPhoneNumber.form-control(type='date', aria-describedby='ownerPhoneNumber', placeholder='Phone Number')
+                  .col-sm-6
+                    .form-group
+                      label(for='ownerEmail')
+                        h4.whiteC .
+                      input#ownerEmail.form-control(type='time', aria-describedby='ownerEmail', placeholder='E-mail')
+                br
+                button.btn.btn-success.btn-large(type='submit') Submit
+              br
+              br
+            #bankPill.tab-pane.fade
+              .row
+                .col-sm-4
+                .col-sm-4
+                  br
+                  br
+                  br
+                  .panel.panel-default
+                    .panel-body.centeralign.connectedPadding
+                      h5.big
+                        span.green CONNECTED
+                        |  or
+                        span.red NOT CONNECTED
+                      br
+                      button.btn.btn-info(type='button') Connect with Stripe
+                      br
+                      br
+                .col-sm-4
+              br
+              br
+              br
