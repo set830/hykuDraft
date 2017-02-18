@@ -97,119 +97,254 @@
             <br />
             <h4 class="darkergray">Location</h4>
             <div class="form-group">
-              <input type="address" class="form-control" id="eventStreetAddress" aria-describedby="eventStreetAddress" placeholder="Enter the Venue's Name">
-              <input type="address" class="form-control" id="eventStreetAddress" aria-describedby="eventStreetAddress" placeholder="Street Address">
-              <input type="address" class="form-control" id="eventStreetAddress" aria-describedby="eventStreetAddress" placeholder="Street Address 2">
-              <input type="address" class="form-control" id="eventAddress" aria-describedby="eventAddress" placeholder="Neighborhood">
-              <input type="address" class="form-control" id="eventStreetAddress" aria-describedby="eventStreetAddress" placeholder="City">
+              <input type="text" class="form-control" id="eventVenue" aria-describedby="eventVenue" placeholder="Enter the Venue's Name">
+              <input type="text" class="form-control" id="eventStreetAddress" aria-describedby="eventStreetAddress" placeholder="Street Address">
+              <input type="text" class="form-control" id="eventStreetAddress2" aria-describedby="eventStreetAddress2" placeholder="Street Address 2">
+              <input type="text" class="form-control" id="eventNeighborhood" aria-describedby="eventNeighborhood" placeholder="Neighborhood">
+              <input type="text" class="form-control" id="eventCity" aria-describedby="eventCity" placeholder="City">
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="address" class="form-control" id="eventCity" aria-describedby="eventCity" placeholder="State">
+                  <input type="text" class="form-control" id="eventState" aria-describedby="eventState" placeholder="State">
                 </div>
                 <div class="col-sm-6">
-                  <input type="address" class="form-control" id="eventState" aria-describedby="eventState" placeholder="ZipCode">
+                  <input type="text" class="form-control" id="eventZip" aria-describedby="eventZip" placeholder="Zip Code">
+                </div>
+              </div>
+            </div>
+            <br />
+            <h4 class="darkergray">Cover Photo</h4>
+            <div class="form-group">
+              <input type="file" class="form-control-file" id="coverPhoto" aria-describedby="coverPhoto">
+              <small id="fileHelp" class="form-text text-muted">JPEG or PNG at least 400 pixels wide and 150 pixels tall</small>
+            </div>
+            <br />
+            <h3 class="blue">
+              Pricing Details
+            </h3>
+            <hr class="blueline">
+
+            <div class="form-group">
+              <label for="individualPrice"><h4 class="darkergray">Individual Price</h4></label>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="retailPrice" placeholder="Retail Price">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="offerPrice" aria-describedby="offerPrice" placeholder="Offer Price">
                 </div>
               </div>
             </div>
 
             <div class="form-group">
+              <label for="groupPrice"><h4 class="darkergray">Group Price</h4></label>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="groupSize" placeholder="Group Size">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="groupPrice" aria-describedby="groupPrice" placeholder="Discounted Per Person Price">
+                </div>
+              </div>
+              <small id="neighborhoodHelp" class="form-text text-muted">For a group of this size, we will charge each person this price. <br />For groups less than this number, we will dynamically calculate the price based on the offer price and this discounted price. <br />For groups greater than this number, we will continue to charge this discounted price.</small>
+            </div>
 
+            <div class="form-group">
+              <label for="eventPerks"><h4 class="darkergray">Perks</h4></label>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="groupSize" placeholder="For this Group Size">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="groupPrice" aria-describedby="groupPrice" placeholder="Description of Perk">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="groupSize" placeholder="For this Group Size">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="groupPrice" aria-describedby="groupPrice" placeholder="Description of Perk">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="groupSize" placeholder="For this Group Size">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="groupPrice" aria-describedby="groupPrice" placeholder="Description of Perk">
+                </div>
+              </div>
+              <small id="neighborhoodHelp" class="form-text text-muted">For future version. Comment out this code for now.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="eventTitle"><h4 class="darkergray">Restrictions</h4></label>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="groupMax" placeholder="Max Group Size">
+                </div>
+                <div class="col-sm-6">
+                </div>
+              </div>
+              <small id="neighborhoodHelp" class="form-text text-muted">Size of group restricted to this number. If unlimited number can join group, leave blank.</small>
             </div>
             <div class="form-group">
-
+                <input type="text" class="form-control" id="groupSize" placeholder="Fine Print Description Bullet Point 1">
+                <input type="text" class="form-control" id="groupPrice" aria-describedby="groupPrice" placeholder="Fine Print Description Bullet Point 2">
+                <input type="text" class="form-control" id="groupPrice" aria-describedby="groupPrice" placeholder="Fine Print Description Bullet Point 3">
+                <small id="neighborhoodHelp" class="form-text text-muted">Use this to communicate any important information (e.g. refunds, exchanges, etc.)</small>
             </div>
 
+            <br />
             <h3 class="blue">
-              Pricing Information
+              Company Details
             </h3>
-            <h4 class="darkergray">
-              Individual Price
-            </h4>
+            <hr class="blueline">
             <div class="form-group">
-              <label for="retailPrice">Retail Price</label>
-              <input type="text" class="form-control" id="retailPrice" placeholder="">
-            </div>
-            <div class="form-group">
-              <label for="offerPrice">Offer Price</label>
-              <input type="text" class="form-control" id="offerPrice" placeholder="">
-            </div>
-            <h4 class="darkergray">
-              Lowest Group Price
-            </h4>
-            <div class="form-inline">
-              <label for="offerPrice">For a group of</label>
-              <input type="text" class="form-control" id="groupNumber" placeholder="">
-              <label for="offerPrice">, charge each person</label>
-              <input type="text" class="form-control" id="groupOfferPrice" placeholder="">
-            </div>
-            <small id="neighborhoodHelp" class="form-text text-muted">Prices dynamically calculated for groups of 1 and this value. Groups larger than this value will be charged this per person price.</small>
-            <h4 class="darkergray">
-              Perks
-            </h4>
-            <div class="form-group">
-              <label for="exampleSelect1">Example select</label>
-              <select class="form-control" id="exampleSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleSelect2">Example multiple select</label>
-              <select multiple class="form-control" id="exampleSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleTextarea">Example textarea</label>
-              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputFile">File input</label>
-              <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-              <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+              <label for="Partner Description"><h4 class="darkergray">Description</h4></label>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="companyDisplayName" aria-describedby="companyDisplayName" placeholder="Company Name">
+                </div>
+                <div class="col-sm-6">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Provide a short company description"></textarea>
+                </div>
+              </div>
             </div>
 
-            <fieldset class="form-group">
-              <legend>Radio buttons</legend>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                  Option one is this and that&mdash;be sure to include why it's great
-                </label>
+            <div class="form-group">
+              <label for="businessContact"><h4 class="darkergray">Contact</h4></label>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="contactPhoneNumber" aria-describedby="contactPhoneNumber" placeholder="Phone Number">
+                </div>
+                <div class="col-sm-6">
+                  <input type="email" class="form-control" id="contactEmail" aria-describedby="contactEmail" placeholder="E-mail">
+                </div>
               </div>
-              <div class="form-check">
-              <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                  Option two can be something else and selecting it will deselect option one
-                </label>
-              </div>
-              <div class="form-check disabled">
-              <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                  Option three is disabled
-                </label>
-              </div>
-            </fieldset>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input">
-                Check me out
-              </label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <br />
+            <button type="submit" class="btn btn-success btn-large">Submit</button>
           </form>
+          <br />
+          <br />
         </div>
 
         <div id="offerPill" class="tab-pane fade">
-          <h3>Menu 1</h3>
-          <p>Some content in menu 1.</p>
+          <br />
+          <br />
+            <div class="container">
+              <div class="panel panel-default dashboardPanel">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h4 class="blue">
+                          Created Offers
+                        </h4>
+                        <br />
+                        <div class="scrollit">
+                          <table class="table table-bordered table-striped table-hover table-responsive centeralign">
+                            <col width="25%">
+                            <col width="25%">
+                            <col width="25%">
+                            <col width="25%">
+                              <tr>
+                                <th class="centeralign">Creation Date</th>
+                                <th class="centeralign">Event Date</th>
+                                <th class="centeralign">Product Name</th>
+                                <th class="centeralign">Hyku Page</th>
+                              </tr>
+                              <tr class="darkergray">
+                                <td>"CreatedDate"</td>
+                                <td>"EventDate"</td>
+                                <td>"ProductName"</td>
+                                <td class="darkergray centeralign"><a href="">View</a></td>
+                              </tr>
+                              <tr class="darkergray">
+                                <td>"CreatedDate"</td>
+                                <td>"EventDate"</td>
+                                <td>"ProductName"</td>
+                                <td class="darkergray centeralign"><a href="">View</a></td>
+                              </tr>
+                              <tr class="darkergray">
+                                <td>"CreatedDate"</td>
+                                <td>"EventDate"</td>
+                                <td>"ProductName"</td>
+                                <td class="darkergray centeralign"><a href="">View</a></td>
+                              </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <br />
+          <br />
+            <div class="container">
+              <div class="panel panel-default dashboardPanel">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h4 class="blue">
+                          Activated Hykus
+                        </h4>
+                        <br />
+                        <div class="scrollit">
+                          <table class="table table-bordered table-striped table-hover table-responsive centeralign">
+                            <col width="16.6%">
+                            <col width="16.6%">
+                            <col width="16.6%">
+                            <col width="16.6%">
+                            <col width="16.6%">
+                            <col width="16.6%">
+                              <tr>
+                                <th class="centeralign">Event Date</th>
+                                <th class="centeralign">Product Name</th>
+                                <th class="centeralign">Time Left</th>
+                                <th class="centeralign">Number of Joiners</th>
+                                <th class="centeralign">Organizer Email</th>
+                                <th class="centeralign">Hyku Page</th>
+                              </tr>
+                              <tr class="darkergray">
+                                <td>"EventDate"</td>
+                                <td>"ProductName"</td>
+                                <td>"TimeLeft"</td>
+                                <td>"NumberOfJoiners"</td>
+                                <td>"OrganizerEmail"</td>
+                                <td class="darkergray centeralign"><a href="">View</a></td>
+                              </tr>
+                              <tr class="darkergray">
+                                <td>"EventDate"</td>
+                                <td>"ProductName"</td>
+                                <td>"TimeLeft"</td>
+                                <td>"NumberOfJoiners"</td>
+                                <td>"OrganizerEmail"</td>
+                                <td class="darkergray centeralign"><a href="">View</a></td>
+                              </tr>
+                              <tr class="darkergray">
+                                <td>"EventDate"</td>
+                                <td>"ProductName"</td>
+                                <td>"TimeLeft"</td>
+                                <td>"NumberOfJoiners"</td>
+                                <td>"OrganizerEmail"</td>
+                                <td class="darkergray centeralign"><a href="">View</a></td>
+                              </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
         <div id="editPill" class="tab-pane fade">
           <h3>Menu 2</h3>
