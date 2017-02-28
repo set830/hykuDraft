@@ -37,104 +37,135 @@
       <div class="row">
         <div class="panel panel-success">
           <div class="panel-heading">
-            <div class="row">
-              <h4 class="whiteC">
-                Sat, June 5th, 2016
-              </h4>
-              <h5 class="whiteC">
-                7pm - 9pm
-              </h5>
-            </div>
           </div>
           <div class="panel-body">
-            <div class="row">
-              <div class="col-sm-6">
-                <h5 class="blue">
-                  Min Number*
-                </h5>
-                <input type="text" class="form-control centeralign" placeholder="1" aria-describedby="eventDate">
-                <br />
+            <form>
+              <h5 class="blue">
+                Organizer Information*
+              </h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control centeralign" placeholder="First Name" aria-describedby="organizerFirstName">
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control centeralign" placeholder="Last Name" aria-describedby="organizerLastName">
+                </div>
               </div>
-              <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-12">
+                  <input type="email" class="form-control centeralign" placeholder="E-mail" aria-describedby="organizerEmail">
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-sm-12">
+                  <h5 class="blue">
+                    Message
+                  </h5>
+                  <textarea class="form-control centeralign" placeholder="Hi everyone, come on out for..." aria-describedby="message"></textarea>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-sm-6">
+                  <h5 class="blue">
+                    Min Number*
+                    <span class="darkgray"><button type="button" class="infoButton" data-toggle="modal" data-target="#minNumberModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button></span>
+                  </h5>
+                  <input type="text" class="form-control centeralign" placeholder="1" aria-describedby="eventDate">
+                  <br />
+                </div>
+                <div class="col-sm-6">
+                  <h5 class="darkgray">
+                    Max Number
+                    <span class="darkgray"><button type="button" class="infoButton" data-toggle="modal" data-target="#maxNumberModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button></span>
+                  </h5>
+                  <input type="text" class="form-control centeralign" placeholder="30 people" aria-describedby="eventDate">
+                  <br />
+                </div>
+              </div>
+              <div class="row centeralign">
                 <h5 class="darkgray">
-                  Max Number
+                  Offer will expire on <span class="blue">Jun 4, 2017</span>
                 </h5>
-                <input type="text" class="form-control centeralign" placeholder="30 people" aria-describedby="eventDate">
+              </div>
+              <br />
+              <div class="row centeralign">
+                <button type="button" class="btn btn-success" id="activateButton">Activate</button>
                 <br />
+                <br />
+                <p class="big darkgray centeralign">
+                </p>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <h5 class="blue">
-                  Email*
-                </h5>
-                <input type="text" class="form-control centeralign" placeholder="example@email.com" aria-describedby="email">
-              </div>
-            </div>
-            <br />
-            <div class="row">
-              <div class="col-sm-12">
-                <h5 class="blue">
-                  Message
-                </h5>
-                <input type="text" class="form-control centeralign" placeholder="Hi everyone, come on out for..." aria-describedby="message">
-              </div>
-            </div>
-            <br /><br />
-            <div class="row centeralign">
-              <button type="button" class="btn btn-success" id="activateButton">Activate</button>
-              <br />
-              <br />
-              <p class="big darkgray centeralign">
-              </p>
-            </div>
-
+            </form>
           </div>
         </div>
       </div>
       <br />
       <br />
   </div>
+
   <div class="col-md-8 col-md-pull-4">
     <div class="row">
       <div class="col-md-2 centeralign">
         <img src="/images/vik.png" id="offerImage" class="img-responsive" alt="Owner">
-        <p class="big">
-          Vik and Jess
+        <p class="big darkergray">
+          ArtsNSpirits
           <br />
-          <small class="darkgray">
-            Owner
-          </small>
         </p>
       </div>
       <div class="col-md-10 centeralign" id="marginAuto">
-        <h3 class="big">
+        <h1 class="big blue">
             <!--Ultimate Grilling Series Class-->
             <!--Group Voice Workshop-->
             <!--Interior Architecture Tour-->
             Paint "Starry Night" Class
-
-            <span class="blue">
-              @
-            </span>
-            <!--Kendall College-->
-            <!--Davin Youngs Voice-->
-            <!--Chicago Detours-->
-            Arts N Spirits
-
-        </h3>
-        <h5 class="darkgray">
-          <!--900 N. Branch St., Chicago, IL-->
-          <!--South Loop, Chicago, IL-->
-          Bucktown, Chicago, IL
-        </h5>
+        </h1>
         <br />
+        <div class="row">
+          <div class="col-xs-4 rightalign">
+            <h4>
+              <span class="blue">
+                <i class="fa fa-calendar">
+                </i>
+              </span>
+            </h4>
+          </div>
+          <div class="col-xs-8 leftalign">
+            <h4 class="darkergray big">
+              Saturday
+              <br />
+              June 5, 2017
+              <br />
+              7:00pm - 9:00pm CST
+            </h4>
+          </div>
+          <div class="col-xs-4 rightalign">
+            <h4>
+              <span class="blue">
+                <i class="fa fa-map-marker">
+                </i>
+              </span>
+            </h4>
+          </div>
+          <div class="col-xs-8 leftalign">
+            <h4 class="darkergray big">
+              McCormick Place
+              <br />
+              123 Totally Real Pl
+              <br />
+              Suite 100
+              <br />
+              Chicago, IL 60601
+            </h4>
+          </div>
+        </div>
         <br />
-        <HR id="offerHR">
-        </HR>
+          <HR id="offerHR">
+          </HR>
         <br />
-      </div>
     </div>
+  </div>
     <div class="row">
       <h5 class="green">
         <b>
@@ -390,7 +421,45 @@
 
 <%= render 'footer' %>
 
+  <div class="modal fade" id="minNumberModal" role="dialog">
+    <div class="modal-dialog">
 
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Min Number</h4>
+        </div>
+        <div class="modal-body">
+          <p>Like a kickstarter, we will only charge your credit cards if at least this number of people join your group. If you don't get enough before time expires, no credit cards will be charged.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="maxNumberModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Max Number</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is the most you can have in your group. Once you reach this cap, we will process your payments. If N/A, there is no limit to the number of people that can join your group.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 

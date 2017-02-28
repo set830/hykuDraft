@@ -87,6 +87,12 @@ h1, h2, h3, h4 {
   margin-left: auto;
   margin-right: auto; }
 
+.rightalign {
+  text-align: right;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
+
 .vcenter {
   display: inline-block;
   vertical-align: middle;
@@ -276,7 +282,7 @@ ul.icon li.checkbox:before {
 /****** Offer *********/
 #offerImage {
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   max-width: 90px;
@@ -287,7 +293,7 @@ ul.icon li.checkbox:before {
   transition: all 1s ease-in-out; }
 
 #offerCover {
-  background-image: url("/images/312elements.png");
+  background-image: url("/images/starrynight.jpg");
   min-height: 68%;
   /* Fallback for browsers do NOT support vh unit */
   min-height: 68vh;
@@ -313,6 +319,11 @@ ul.icon li.checkbox:before {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px; }
+
+.infoButton {
+  padding: 0;
+  border: none;
+  background: none; }
 
 #fixedHeight {
   height: 120px; }

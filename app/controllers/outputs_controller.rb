@@ -76,6 +76,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def partnerDashboard2variables
+
+  end
+
   def userAccount
 
   end

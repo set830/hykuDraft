@@ -6,6 +6,7 @@
       new WOW().init();
     </script>
 
+    <!-- Override Navbar to add navbarImage-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -27,7 +28,6 @@
         </div>
       </div>
     </nav>
-
 
   </head>
 
@@ -72,25 +72,25 @@
             <hr class="blueline">
             <div class="form-group">
               <label for="eventTitle"><h4 class="darkergray">Event Title</h4></label>
-              <input type="text" class="form-control" id="eventTitle" aria-describedby="eventTitle" placeholder="Provide a short distinct name">
+              <input type="text" class="form-control" id="eventTitle" aria-describedby="eventTitle" placeholder="eventTitle">
             </div>
             <div class="row">
               <div class="col-sm-4">
                 <div class="form-group">
                   <label for="eventDate"><h4 class="darkergray">Event Date</h4></label>
-                  <input type="date" class="form-control" id="eventDate" aria-describedby="eventDate" placeholder="May 12, 2017">
+                  <input type="text" class="form-control" id="eventDate" aria-describedby="eventDate" placeholder="eventDate">
                 </div>
               </div>
               <div class="col-sm-4">
                 <div class="form-group">
                   <label for="eventStartTime"><h4 class="darkergray">Start Time</h4></label>
-                  <input type="time" class="form-control" id="eventStartTime" aria-describedby="eventStartTime" placeholder="3:00pm">
+                  <input type="text" class="form-control" id="eventStartTime" aria-describedby="eventStartTime" placeholder="eventStartTime">
                 </div>
               </div>
               <div class="col-sm-4">
                 <div class="form-group">
                   <label for="eventEndTime"><h4 class="darkergray">End Time</h4></label>
-                  <input type="time" class="form-control" id="eventEndTime" aria-describedby="eventEndTime" placeholder="5:00pm">
+                  <input type="text" class="form-control" id="eventEndTime" aria-describedby="eventEndTime" placeholder="eventEndTime">
                 </div>
               </div>
             </div>
@@ -98,8 +98,7 @@
               <div class="col-sm-4">
                 <div class="form-group">
                   <label for="hykuExpirationDate"><h4 class="darkergray">Hyku Expiration Date</h4></label>
-                  <span class="blue"><button type="button" class="infoButton" data-toggle="modal" data-target="#expirationDateModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button></span>
-                  <input type="date" class="form-control" id="hykuExpirationDate" aria-describedby="hykuExpirationDate" placeholder="May 5, 2017">
+                  <input type="date" class="form-control" id="hykuExpirationDate" aria-describedby="hykuExpirationDate" placeholder="hykuExpirationDate">
                 </div>
               </div>
               <div class="col-sm-4">
@@ -107,29 +106,28 @@
               <div class="col-sm-4">
               </div>
             </div>
+            <br />
             <h4 class="darkergray">Location</h4>
             <div class="form-group">
-              <input type="text" class="form-control" id="eventVenue" aria-describedby="eventVenue" placeholder="Enter the Venue's Name">
-              <input type="text" class="form-control" id="eventStreetAddress" aria-describedby="eventStreetAddress" placeholder="Street Address">
-              <input type="text" class="form-control" id="eventStreetAddress2" aria-describedby="eventStreetAddress2" placeholder="Street Address 2">
-              <input type="text" class="form-control" id="eventNeighborhood" aria-describedby="eventNeighborhood" placeholder="Neighborhood">
-              <input type="text" class="form-control" id="eventCity" aria-describedby="eventCity" placeholder="City">
+              <input type="text" class="form-control" id="eventVenue" aria-describedby="eventVenue" placeholder="eventVenue">
+              <input type="text" class="form-control" id="eventStreetAddress" aria-describedby="eventStreetAddress" placeholder="eventStreetAddress">
+              <input type="text" class="form-control" id="eventStreetAddress2" aria-describedby="eventStreetAddress2" placeholder="eventStreetAddress2">
+              <input type="text" class="form-control" id="eventNeighborhood" aria-describedby="eventNeighborhood" placeholder="eventNeighborhood">
+              <input type="text" class="form-control" id="eventCity" aria-describedby="eventCity" placeholder="eventCity">
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="eventState" aria-describedby="eventState" placeholder="State">
+                  <input type="text" class="form-control" id="eventState" aria-describedby="eventState" placeholder="eventState">
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="eventZip" aria-describedby="eventZip" placeholder="Zip Code">
+                  <input type="text" class="form-control" id="eventZip" aria-describedby="eventZip" placeholder="eventZip">
                 </div>
               </div>
             </div>
-            <label for="coverPhoto"><h4 class="darkergray">
-              Cover Photo
-            </h4></label>
-              <span class="blue"><button type="button" class="infoButton" data-toggle="modal" data-target="#coverPhotoModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button></span>
-
+            <br />
+            <h4 class="darkergray">Cover Photo</h4>
             <div class="form-group">
               <input type="file" class="form-control-file" id="coverPhoto" aria-describedby="coverPhoto">
+              <small id="fileHelp" class="form-text text-muted">JPEG or PNG at least 400 pixels wide and 150 pixels tall</small>
             </div>
             <br />
             <h3 class="blue">
@@ -139,76 +137,74 @@
 
             <div class="form-group">
               <label for="individualPrice"><h4 class="darkergray">Individual Price</h4></label>
-              <span class="blue"><button type="button" class="infoButton" data-toggle="modal" data-target="#individualPriceModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button></span>
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="retailPrice" placeholder="Retail Price">
+                  <input type="text" class="form-control" id="retailPrice" placeholder="retailPrice">
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="offerPrice" aria-describedby="offerPrice" placeholder="Offer Price">
+                  <input type="text" class="form-control" id="offerPrice" aria-describedby="offerPrice" placeholder="offerPrice">
                 </div>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="groupPrice"><h4 class="darkergray">
-                Group Price
-              </h4></label>
-              <span class="blue"><button type="button" class="infoButton" data-toggle="modal" data-target="#groupPriceModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button></span>
+              <label for="Group Price"><h4 class="darkergray">Group Price</h4></label>
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="groupSize" placeholder="Group Size">
+                  <input type="text" class="form-control" id="groupDiscountSize" placeholder="groupDiscountSize">
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="groupPrice" aria-describedby="groupPrice" placeholder="Discounted Per Person Price">
+                  <input type="text" class="form-control" id="groupDiscountPrice" aria-describedby="groupDiscountPrice" placeholder="groupDiscountPrice">
                 </div>
               </div>
+              <small id="neighborhoodHelp" class="form-text text-muted">For a group of this size, we will charge each person this price. <br />For groups less than this number, we will dynamically calculate the price based on the offer price and this discounted price. <br />For groups greater than this number, we will continue to charge this discounted price.</small>
             </div>
 
             <div class="form-group">
               <label for="eventPerks"><h4 class="darkergray">Perks</h4></label>
-              <span class="blue"><button type="button" class="infoButton" data-toggle="modal" data-target="#perksModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button></span>
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="perk1GroupSize" placeholder="For this Group Size">
+                  <input type="text" class="form-control" id="perk1GroupSize" placeholder="perk1GroupSize">
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="perk1Description" aria-describedby="groupPrice" placeholder="Description of Perk">
+                  <input type="text" class="form-control" id="perk1Description" aria-describedby="groupPrice" placeholder="perk1Description">
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="perk2GroupSize" placeholder="For this Group Size">
+                  <input type="text" class="form-control" id="groupSize" placeholder="perk2GroupSize">
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="perk2Description" aria-describedby="groupPrice" placeholder="Description of Perk">
+                  <input type="text" class="form-control" id="groupPrice" aria-describedby="groupPrice" placeholder="perk2Description">
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="perk3GroupSize" placeholder="For this Group Size">
+                  <input type="text" class="form-control" id="groupSize" placeholder="perk3GroupSize">
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="perk3Description" aria-describedby="groupPrice" placeholder="Description of Perk">
+                  <input type="text" class="form-control" id="groupPrice" aria-describedby="groupPrice" placeholder="perk3Description">
                 </div>
               </div>
+              <small id="neighborhoodHelp" class="form-text text-muted">For future version. Comment out this code for now.</small>
             </div>
 
             <div class="form-group">
               <label for="Restrictions"><h4 class="darkergray">Restrictions</h4></label>
-              <span class="blue"><button type="button" class="infoButton" data-toggle="modal" data-target="#restrictionsModal"><i class="fa fa-info-circle" aria-hidden="true"></i></button></span>
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="groupPartnerMax" placeholder="Max Group Size">
+                  <input type="text" class="form-control" id="groupPartnerMax" placeholder="groupPartnerMax">
                 </div>
                 <div class="col-sm-6">
                 </div>
               </div>
+              <small id="neighborhoodHelp" class="form-text text-muted">Size of group restricted to this number. If unlimited number can join group, leave blank.</small>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" id="finePrintDescription1" placeholder="Fine Print Description: Bullet Point 1">
-                <input type="text" class="form-control" id="finePrintDescription2" aria-describedby="groupPrice" placeholder="Fine Print Description: Bullet Point 2">
-                <input type="text" class="form-control" id="finePrintDescription3" aria-describedby="groupPrice" placeholder="Fine Print Description: Bullet Point 3">
+                <input type="text" class="form-control" id="finePrintDescription1" placeholder="finePrintDescription1">
+                <input type="text" class="form-control" id="finePrintDescription2" aria-describedby="groupPrice" placeholder="finePrintDescription2">
+                <input type="text" class="form-control" id="groupPrice" aria-describedby="finePrintDescription3" placeholder="finePrintDescription3">
+                <small id="neighborhoodHelp" class="form-text text-muted">Use this to communicate any important information (e.g. refunds, exchanges, etc.)</small>
             </div>
 
             <br />
@@ -220,14 +216,14 @@
               <label for="Partner Description"><h4 class="darkergray">Description</h4></label>
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="partnerDisplayName" aria-describedby="companyDisplayName" placeholder="Business Name">
+                  <input type="text" class="form-control" id="partnerDisplayName" aria-describedby="companyDisplayName" placeholder="partnerDisplayName">
                 </div>
                 <div class="col-sm-6">
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-12">
-                  <textarea class="form-control" id="partnerDescription" rows="3" placeholder="Provide a short company description"></textarea>
+                  <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="partnerDescription"></textarea>
                 </div>
               </div>
             </div>
@@ -236,10 +232,10 @@
               <label for="businessContact"><h4 class="darkergray">Contact</h4></label>
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="partnerPhoneNumber" aria-describedby="contactPhoneNumber" placeholder="Phone Number">
+                  <input type="text" class="form-control" id="partnerPhoneNumber" aria-describedby="contactPhoneNumber" placeholder="partnerPhoneNumber">
                 </div>
                 <div class="col-sm-6">
-                  <input type="email" class="form-control" id="partnerEmail" aria-describedby="contactEmail" placeholder="E-mail">
+                  <input type="email" class="form-control" id="partnerEmail" aria-describedby="contactEmail" placeholder="partnerEmail">
                 </div>
               </div>
             </div>
@@ -367,24 +363,24 @@
           <br />
           <form>
             <h3 class="blue">
-              Update Contact Information
+              Update Information
             </h3>
             <hr class="blueline">
             <div class="form-group">
-              <label for="partnerName"><h4 class="darkergray">Business Name</h4></label>
-              <input type="text" class="form-control" id="partnerName" aria-describedby="partnerName" placeholder="Official Business Name">
+              <label for="partnerBusinessName"><h4 class="darkergray">Business Name</h4></label>
+              <input type="text" class="form-control" id="partnerName" aria-describedby="partnerBusinessName" placeholder="partnerBusinessName">
             </div>
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
                   <label for="ownerFirstName"><h4 class="darkergray">Owner Name</h4></label>
-                  <input type="text" class="form-control" id="ownerFirstName" aria-describedby="ownerFirstName" placeholder="First Name">
+                  <input type="text" class="form-control" id="ownerFirstName" aria-describedby="ownerFirstName" placeholder="ownerFirstName">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
                   <label for="ownerLastName"><h4 class="whiteC">.</h4></label>
-                  <input type="text" class="form-control" id="ownerLastName" aria-describedby="ownerLastName" placeholder="Last Name">
+                  <input type="text" class="form-control" id="ownerLastName" aria-describedby="ownerLastName" placeholder="ownerLastName">
                 </div>
               </div>
             </div>
@@ -392,27 +388,27 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <label for="ownerPhoneNumber"><h4 class="darkergray">Contact</h4></label>
-                  <input type="text" class="form-control" id="ownerPhoneNumber" aria-describedby="ownerPhoneNumber" placeholder="Phone Number">
+                  <input type="text" class="form-control" id="ownerPhoneNumber" aria-describedby="ownerPhoneNumber" placeholder="ownerPhoneNumber">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
                   <label for="ownerEmail"><h4 class="whiteC">.</h4></label>
-                  <input type="email" class="form-control" id="ownerEmail" aria-describedby="ownerEmail" placeholder="E-mail">
+                  <input type="text" class="form-control" id="ownerEmail" aria-describedby="ownerEmail" placeholder="ownerEmail">
                 </div>
               </div>
             </div>
             <h4 class="darkergray">Address</h4>
               <div class="form-group">
-                <input type="text" class="form-control" id="partnerStreetAddress" aria-describedby="partnerStreetAddress" placeholder="Street Address">
-                <input type="text" class="form-control" id="partnerStreetAddress2" aria-describedby="partnerStreetAddress2" placeholder="Street Address 2">
-                <input type="text" class="form-control" id="partnerCity" aria-describedby="partnerCity" placeholder="City">
+                <input type="text" class="form-control" id="partnerStreetAddress" aria-describedby="partnerStreetAddress" placeholder="partnerStreetAddress">
+                <input type="text" class="form-control" id="partnerStreetAddress2" aria-describedby="partnerStreetAddress2" placeholder="partnerStreetAddress2">
+                <input type="text" class="form-control" id="partnerCity" aria-describedby="partnerCity" placeholder="partnerCity">
                 <div class="row">
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="partnerState" aria-describedby="partnerState" placeholder="State">
+                    <input type="text" class="form-control" id="partnerState" aria-describedby="partnerState" placeholder="partnerState">
                   </div>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="partnerZip" aria-describedby="partnerZip" placeholder="Zip Code">
+                    <input type="text" class="form-control" id="partnerZip" aria-describedby="partnerZip" placeholder="partnerZip">
                   </div>
                 </div>
               </div>
@@ -421,6 +417,8 @@
               <input type="file" class="form-control-file" id="partnerLogo" aria-describedby="partnerLogo">
               <small id="fileHelp" class="form-text text-muted"></small>
             </div>
+
+            <br />
             <br />
             <button type="submit" class="btn btn-success btn-large">Submit</button>
           </form>
@@ -460,133 +458,6 @@
 </div>
 
 <%= render 'footer' %>
-
-
-  <div class="modal fade" id="expirationDateModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Hyku Expiration Date</h4>
-        </div>
-        <div class="modal-body">
-          <p>Any hyku groups created from this offer will all expire on this date. At this date, we will process customers' credit cards and send the ticket confirmations. <br /><br /> We recommend setting the expiry date a day before the event date. But if you need the group to confirm their numbers earlier, set the expiration date accordingly.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="modal fade" id="coverPhotoModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Cover Photo</h4>
-        </div>
-        <div class="modal-body">
-          <p>Provide a high resolution JPEG or PNG that is at least 400 pixels wide and 150 pixels tall. This will appear as the cover photo for both the offer and active hykus. Be sure it depicts the product or event you'd like your customers to purchase.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="modal fade" id="groupPriceModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Group Price</h4>
-        </div>
-        <div class="modal-body">
-          <p>We use the values in "Group Size" and "Discounted Price per Person" to dynamically calculate the per person price depending on the size of the group. <br /><br />Example: If the offer price for one person is $100 and you are willing to give a max discount of $50 per person if 11 people join the group, then put "11" for "Group Size" and "50" for "Discounted Price per Person". <br /><br />We will automatically calculate a per person discount. In this case, it's $5 off for each additional joiner.<br /><br />If only 1 person joins, we'll charge $100. <br />If 2 people join the group, we will charge each $95 per person. <br />If 3 join, we'll charge each $90 per person. <br /> ... <br />If 10 people join, we'll charge each $55 per person. <br /> If 11 join, we'll charge each $50 per person. <br /> <br />If more than 11 join, each person in the group will continue to receive the max discount of $50 per person.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="modal fade" id="perksModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Perks</h4>
-        </div>
-        <div class="modal-body">
-          <p>Optional: If a certain number of people join the group, reward them with something. If you choose not to participate in perks, leave this section blank.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="modal fade" id="individualPriceModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Retail and Offer Price</h4>
-        </div>
-        <div class="modal-body">
-          <p>
-          Retail Price: The price without any discounts. <br />
-          Offer Price: The starting price per person for this hyku offer. <br /><br />
-          Note: Offer Price must be less than or equal to Retail Price.
-          </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="modal fade" id="restrictionsModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Restrictions</h4>
-        </div>
-        <div class="modal-body">
-          <p>Max Group Size: This is the most that can join any one hyku group. Once this cap is reached, we will process their credit cards and email their ticket confirmations.
-          <br /><br />
-          Fine Print: Include any special instructions in this section. (e.g. refunds, exchanges, weather contingencies, etc.)</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
 </body>
 

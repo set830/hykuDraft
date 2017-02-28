@@ -38,6 +38,7 @@ Rails.application.routes.draw do
 
   get "/partnerDashboard", :controller => "outputs", :action => "partnerDashboard"
   get "/partnerDashboard2", :controller => "outputs", :action => "partnerDashboard2"
+  get "/partnerDashboard2variables", :controller => "outputs", :action => "partnerDashboard2variables"
   get "/userAccount", :controller => "outputs", :action => "userAccount"
 
   get "/partnerRegistered", :controller => "emails", :action => "partnerRegistered"
