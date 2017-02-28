@@ -237,9 +237,28 @@
       <br />
 
       <h5 class="green">
-        <b>Offer</b>
+        <b>Price</b>
       </h5>
       <br />
+      <div class="row">
+          <input id="ex6" type="text" data-slider-min="1" data-slider-max="10" data-slider-step="1" data-slider-value="3"/>
+          <span id="ex6CurrentSliderValLabel">Current Slider Value: <span id="ex6SliderVal">3</span></span>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="row">
           <div class="col-sm-4">
             <div class="panel panel-default">
@@ -265,10 +284,6 @@
               </div>
               <div class="panel-footer">
                 <h5 class="centeralign big green">
-                  <!--$300 pp-->
-                  <!--$90 pp-->
-                 <!-- $75 pp-->
-                  <!--$50 pp-->
                   $40 pp
                 </h5>
               </div>
@@ -356,17 +371,20 @@
       </h5>
       <div class="row">
         <div class="col-sm-6">
-          <h5 class="big darkgray">
+          <h5 class="big">
             <!--212 Sangamon St-->
             <!--900 N. Branch St.-->
             <!--410 South Michigan Avenue, No. 540-->
             <!--The Loop-->
-            1921 N Damen Ave
+            <span class="darkergray">1921 N Damen Ave</span>
             <br />
-            Chicago, IL 60642
+            <span class="darkergray">Suite 100</span>
             <br />
-            (773) 772-3877
+            <span class="darkergray">Chicago, IL 60642</span>
             <br />
+            <span class="darkgray">(773) 772-3877</span>
+            <br />
+            <span class="darkgray">HappyCustomers@artsnspirits.com</span>
             <br />
           </h5>
 
@@ -402,6 +420,7 @@
         <ul class="big">
           <li>Offer must be completed 3 days before the event date</li>
           <li>No refunds given, but you can reschedule your session date if needed</li>
+          <li>A third point</li>
           <!--
           <li>Once the hyku is complete, I will follow up with you to confirm the exact time you'll need to come for your session</li>
           <li>The total meal price is $600. The more people who join, the price auto-declines for everyone</li>
@@ -462,5 +481,11 @@
   </div>
 
 </body>
+<style>
+var slider = new Slider("#ex6");
+slider.on("slide", function(sliderValue) {
+  document.getElementById("ex6SliderVal").textContent = sliderValue;
+});
+</style>
 
 </html>
