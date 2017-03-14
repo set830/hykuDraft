@@ -353,6 +353,23 @@ ul.icon li.plus:before {
   margin-left: auto;
   margin-right: auto; }
 
+#slider {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+
+#rangevalue {
+  color: #217dbb;
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 10px; }
+
+#priceValue {
+  font-size: 45px; }
+
+#perkValue {
+  padding: 20px; }
+
 /****** Active *********/
 #goStatusPanel {
   margin: 15px;

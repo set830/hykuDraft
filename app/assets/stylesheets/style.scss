@@ -442,6 +442,27 @@ ul.icon li.plus:before {
     margin-right: auto;
 }
 
+#slider {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+#rangevalue {
+  color: $blue;
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 10px;
+}
+
+#priceValue {
+  font-size: 45px;
+}
+
+#perkValue {
+  padding:20px;
+}
+
 /****** Active *********/
 
 #goStatusPanel{
