@@ -52,6 +52,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def offer3variables
+
+  end
+
   def contact
 
   end

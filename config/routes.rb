@@ -30,6 +30,7 @@ Rails.application.routes.draw do
   get "/offer", :controller => "outputs", :action => "offer"
   get "/offer2", :controller => "outputs", :action => "offer2"
   get "/offer3", :controller => "outputs", :action => "offer3"
+  get "/offer3variables", :controller => "outputs", :action => "offer3variables"
   get "/contact", :controller => "outputs", :action => "contact"
   get "/email", :controller => "outputs", :action => "email"
   get "/pageNotFound", :controller => "outputs", :action => "pageNotFound"
