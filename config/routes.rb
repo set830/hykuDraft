@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   #------------------------------
 
   get "/active", :controller => "outputs", :action => "active"
+  get "/activevariables", :controller => "outputs", :action => "activevariables"
   get "/active2", :controller => "outputs", :action => "active2"
   get "/homepage", :controller => "outputs", :action => "homepage"
   get "/forallhome", :controller => "outputs", :action => "forallhome"

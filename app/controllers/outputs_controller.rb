@@ -4,6 +4,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def activevariables
+
+  end
+
   def active2
 
   end

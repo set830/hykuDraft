@@ -1,4 +1,3 @@
-
 <div class="jumbotron" id="offerCover">
 </div>
 
@@ -27,26 +26,19 @@
           <div class="row">
             <div class="col-sm-offset-1 col-sm-5">
               <h2 class="blue">
-                  Headshot Photography
-                  <!--Ultimate Grilling Series Class-->
-                  <!--Group Voice Workshop-->
-                  <!--Painting "Starry Night" Class-->
-                  <!--River North Whiskey Fest-->
+                  eventTitle
                 </font>
               </h2>
               <h5 class="darkergray">
-                by 312 Elements
+                by partnerDisplayName
               </h5>
               <div class="panel-body">
                 <h5 class="big">
-                  Sign up for linkedin headshots. Great deal if we all do it together!
-                  <!--It'll be so much fun to take a big family grilling class together. Sign up!-->
-                  <!--Hey who's down for improving our voice skills for Follies? You know you need it!-->
-                  <!--Yo Davis Cohort, let's see which Booth Cohort can bring the most rep to this!-->
+                  organizerMessage
                 </h5>
                 <h5>
                   <b>
-                    Shawn T.
+                    organizerFirstName organizerLastName(initial only)
                       <i>
                         <small>
                           Organizer
@@ -62,28 +54,20 @@
                 <div class="panel-body">
                   <i class="fa fa-calendar blue">
                     </i>
-                  Sun, Jan 29th, 2017 |
+                  Auto-generated Day, eventDate |
                   <i>
-                  2:00pm - 5:00pm CST
+                  eventStartTime - eventEndTime CST
                   </i>
                 </div>
               </div>
               <div class="panel panel-info">
                 <div class="panel-body">
-                    <i class="fa fa-map-marker blue">
+                  <i class="fa fa-map-marker blue">
                     </i>
                     <b>
-                      312 Elements Studio
-                      <!--Kendall College-->
-                      <!--Davin Youngs Voice-->
-                      <!--Arts N Spirits-->
-                      <!--Moe's Cantina-->
+                      eventVenue
                     </b>
-                     | 212 N Sangamon St, Chicago, IL
-                     <!--900 N. Branch St., Chicago, IL-->
-                     <!--410 South Michigan Avenue, No. 540, Chicago-->
-                     <!--1921 N Damen Ave, Chicago, IL-->
-                     <!--149 W. Kinzie St, Chicago-->
+                     | eventStreetAddress, eventStreetAddress2, eventCity, eventState
                 </div>
               </div>
             </div>
@@ -100,7 +84,7 @@
                     <div class="row">
                       <div class="centeralign blue">
                         <!-- If before GO, use below:-->
-                        Pending: Only 3 more to GO
+                        Pending: Only spotsLeftToGo more to GO
 
                         <!-- If GO, change wording to "It's a GO!"-->
 
@@ -119,7 +103,7 @@
                         <div class="progress progress-striped">
                           <div class="progress-bar progress-bar-custom active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                               <span class="sr-only">
-                                60% Complete
+                                goProgressBarPercentage% Complete
                               </span>
                           </div>
                         </div>
@@ -138,7 +122,7 @@
                     <div id="priceStatusPanel">
                       <div class="row">
                         <div class="centeralign blue">
-                          Current Price: <span class="darkgray"><strike>$300</strike></span> $275
+                          Current Price: <span class="darkgray"><strike>$retailPrice</strike></span> $currentPriceInActive
                             <!--$87.50-->
                             <!--$73.25-->
                             <!--$55.00-->
@@ -160,10 +144,7 @@
                           <!-- if after GO, use below-->
                           If you join, price will decrease to <br>
                           <span class="blue">
-                            <!--$210-->
-                            <!--$86.40-->
-                            <!--$73.10-->
-                            $270.25
+                            nextPriceInActive
                           </span> <br>
                           <!-- if max discount reached, add "(lowest group price acheived)" next to price -->
                           for everyone
@@ -183,7 +164,7 @@
                     </i>
                     <i>
                       <!-- If before GO use below: -->
-                      12 hrs, 13 mins left to hit GO
+                      hoursLeftToHykuExpiration hrs, minutesLeftToHykuExpiration mins left to hit GO
 
                       <!-- If GO, delete the "to hit GO" part-->
 
@@ -231,7 +212,7 @@
                       <div class="col-sm-12 centeralign">
                         <table class="popupTable table table-striped">
                           <tr>
-                            <td>Marilyn J.</td>
+                            <td>joinerFirstName joinerLastName(initial Only)</td>
                           </tr>
                           <tr>
                             <td>Rose B.</td>
@@ -260,11 +241,11 @@
     <br />
     <div class="row">
       <h5 class="green">
-        <b>"Starry Night" Painting Class</b>
+        <b>eventTitle</b>
       </h5>
       <h5 class="big darkgray" id="offerPadding">
 
-        Looking for a way to explore your artistic side but don't know where to start? Arts n Spirits is Chicago's newest venue for an entertaining evening out on the town. It's the perfect place to get together with friends and family to relax, unwind, and enjoy time painting together while sipping your favorite beverage (BYOB). Whether you consider yourself an artist or have never painted before, our instructor will guide you through the featured painting of the evening... and at the end of the night, you'll go home with your own unique painting!
+        eventDescription
 
       </h5>
 
@@ -277,7 +258,7 @@
       <h5 class="green">
         <b>Group Price</b>
       </h5>
-      <span class="darkgray">Retail: <strike>$50.99</strike>
+      <span class="darkgray">Retail: <strike>retailPrice</strike>
       <br />
       <div class="row">
         <div class="col-sm-4">
@@ -316,7 +297,7 @@
           <div class="panel panel-default">
             <div class="panel-body big blue centeralign" id="fixedHeight">
               <h5 class="centeralign blue" id="perkValue">
-                Free warm donuts and nutella coffee
+                Perk Descriptions based on Group Number selected
               </h5>
             </div>
             <div class="panel-footer">
@@ -328,7 +309,9 @@
         </div>
       </div>
         <span class="darkgray"><small>
-          *Price dynamically adjusts based on number in group
+          Number of People: Max Value = groupPartnerMax. if blank, 10. <br />
+          Price per person: calculated based on -number of people- selection and groupDiscountSize and groupDiscountPrice. <br />
+          Bonus Perk: visible if PerkDescriptions not blank.
         </small></span>
       <br />
       <br />
@@ -342,15 +325,15 @@
       <div class="row">
         <div class="col-sm-6">
           <h5 class="big">
-            <span class="darkergray">1921 N Damen Ave</span>
+            <span class="darkergray">eventStreetAddress</span>
             <br />
-            <span class="darkergray">Suite 100</span>
+            <span class="darkergray">eventStreetAddress2</span>
             <br />
-            <span class="darkergray">Chicago, IL 60642</span>
+            <span class="darkergray">eventCity, eventState eventZip</span>
             <br />
-            <span class="darkgray">(773) 772-3877</span>
+            <span class="darkgray">partnerPhoneNumber</span>
             <br />
-            <span class="darkgray">HappyCustomers@artsnspirits.com</span>
+            <span class="darkgray">partnerEmail</span>
             <br />
           </h5>
 
@@ -384,9 +367,9 @@
       </h5>
       <h5 class="darkgray">
         <ul class="big">
-          <li>Offer must be completed 3 days before the event date</li>
-          <li>No refunds given, but you can reschedule your session date if needed</li>
-          <li>A third point</li>
+          <li>finePrintDescription1</li>
+          <li>finePrintDescription2</li>
+          <li>finePrintDescription3</li>
         </ul>
       </h5>
       <br />
