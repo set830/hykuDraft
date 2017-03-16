@@ -20,6 +20,10 @@ class OutputsController < ApplicationController
 
   end
 
+  def chat
+
+  end
+
   def about
 
   end
